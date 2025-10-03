@@ -1,0 +1,90 @@
+baseURL = "https://www.luciete.com.br"
+theme = "nostyle"
+relativeURLs = true
+title = "Artes da Lu"
+languageCode = "pt-br"
+defaultContentLanguage = "pt-br"
+removePathAccents = true
+enableInlineShortcodes = true
+paginate = 50
+
+[menu]
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Produtos"
+    url = "/posts/"
+    weight = 10
+
+[[menu.main]]
+    name = "Receitas"
+    url = "/articles/"
+    weight = 15
+
+[[menu.main]]
+    name = "Sobre nós"
+    url = "/about/"
+    weight = 20
+
+[[menu.main]]
+    name = "Contato"
+    url = "#contact"
+    weight = 30
+
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[params]
+  custom_css = [
+    "/css/bootstrap.min",
+    "/css/templatemo",
+    "/css/custom"]
+
+  custom_js = [
+    "/js/jquery-1.11.0.min",
+    "/js/jquery-migrate-1.2.1.min",
+    "/js/bootstrap.bundle.min",
+    "/js/templatemo",
+    "/js/custom"]
+
+  show_description = true
+  slogan = "Um espaço de Criação e Inspiração"
+  description = "Acreditamos que a papelaria pode ir além do funcional, e por isso, cada produto Purpry Papers é pensado para encantar e surpreender."
+  favicon = "/icons/favicon.png"
+  appleIcon = "/icons/apple-icon.png"
+  logotipo = "/images/logotipo.png"
+  logotipo2 = "/images/logotipo2.png"
+  
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true

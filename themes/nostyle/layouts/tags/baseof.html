@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode }}">
+
+{{- partial "head.html" . -}}
+
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+
+    {{- partial "menu_bar.html" . -}}
+
+    <section id="posts">
+        <div class="container">
+            {{- block "main" . }}{{- end }}
+        </div>
+
+        <h2 class="h2">
+            <a class="text-warning text-decoration-none" href="/posts">
+                Ver tudo 
+                <i class="fa fa-solid fa-chevron-circle-right"></i></a>
+        </h2>
+        
+    </section>
+
+    {{- partial "footer.html" . -}}
+
+</body>
+
+</html>

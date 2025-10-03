@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artes da Lu</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Artes da Lu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 03 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bolo de pão de queijo</title>
+      <link>http://localhost:1313/articles/bolo-de-queijo/</link>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bolo-de-queijo/</guid>
+      <description>Fácil e rápido de preparar.</description>
+    </item>
+    <item>
+      <title>Bolo doce de queijo</title>
+      <link>http://localhost:1313/articles/bolo-doce-de-queijo/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bolo-doce-de-queijo/</guid>
+      <description>Fácil e rápido de preparar com poucos ingredientes.</description>
+    </item>
+    <item>
+      <title>Bolo de cenoura</title>
+      <link>http://localhost:1313/articles/bolo-de-cenoura/</link>
+      <pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bolo-de-cenoura/</guid>
+      <description>Esse bolo de cenoura no liquidificador é muito prático.</description>
+    </item>
+    <item>
+      <title>Bolo de milho verde</title>
+      <link>http://localhost:1313/articles/bolo-de-milho/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bolo-de-milho/</guid>
+      <description>Uma delícia feita com pouquíssimos ingredientes.</description>
+    </item>
+    <item>
+      <title>Receita de pão de batata</title>
+      <link>http://localhost:1313/articles/pao-de-batata/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/pao-de-batata/</guid>
+      <description>Receita de pão delicioso e prático que até eu consigo fazer! Essa receita eu aprendi com o Paulo Henrique, de Santa Maria do Pará.</description>
+    </item>
+    <item>
+      <title>Torta Salgada</title>
+      <link>http://localhost:1313/articles/torta-salgada/</link>
+      <pubDate>Tue, 03 Mar 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/torta-salgada/</guid>
+      <description>Esta é uma receita mais elaborada e trabalhosa, mas o resultado é saboroso.</description>
+    </item>
+    <item>
+      <title>Pão Francês Caseiro</title>
+      <link>http://localhost:1313/articles/pao-frances/</link>
+      <pubDate>Wed, 15 Oct 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/pao-frances/</guid>
+      <description>Esta é uma receita um pouco mais elaborada, porém muito gratificante de fazer. Foi publicada pelo Jornal Nacional lá pelo ano de 2007.</description>
+    </item>
+    <item>
+      <title>Pizza de Liquidificador</title>
+      <link>http://localhost:1313/articles/pizza-de-liquidificador/</link>
+      <pubDate>Wed, 15 Oct 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/pizza-de-liquidificador/</guid>
+      <description>Facílima de fazer, ideal para um lanche rápido. Não sei que é o autor. Aprendi a fazê-la em Castanhal-PA, em 1996.</description>
+    </item>
+    <item>
+      <title>Biquini de Praia</title>
+      <link>http://localhost:1313/posts/0015-biquini-de-praia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0015-biquini-de-praia/</guid>
+      <description>Biquini de praia com bojo.</description>
+    </item>
+    <item>
+      <title>Blusa Jovial</title>
+      <link>http://localhost:1313/posts/0003-blusa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0003-blusa/</guid>
+      <description>Blusa em estilo moderno, ideal para mulheres jovens.</description>
+    </item>
+    <item>
+      <title>Calça Comprida Bebê</title>
+      <link>http://localhost:1313/posts/0011-calca-bebe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0011-calca-bebe/</guid>
+      <description>Calça comprida para bebê.</description>
+    </item>
+    <item>
+      <title>Casaquinho de bebê</title>
+      <link>http://localhost:1313/posts/0010-casaquinho/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0010-casaquinho/</guid>
+      <description>Casaquinho de lã anti-alérgica para bebê.</description>
+    </item>
+    <item>
+      <title>Conjuntinho Intantil</title>
+      <link>http://localhost:1313/posts/0017-conjuntinho-intantil/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0017-conjuntinho-intantil/</guid>
+      <description>Conjuntinho infantil, short e top feito de linha.</description>
+    </item>
+    <item>
+      <title>Croped Margarida</title>
+      <link>http://localhost:1313/posts/0005-croped-margarida/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0005-croped-margarida/</guid>
+      <description>Croped em crochê com uma margarida na gola.</description>
+    </item>
+    <item>
+      <title>Croped Sereia</title>
+      <link>http://localhost:1313/posts/0004-croped-sereia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0004-croped-sereia/</guid>
+      <description>Croped sereia em crochê.</description>
+    </item>
+    <item>
+      <title>Jardineira Bebê</title>
+      <link>http://localhost:1313/posts/0014-jardineira/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0014-jardineira/</guid>
+      <description>Jardineira colorida para bebê.</description>
+    </item>
+    <item>
+      <title>Jardineira para Bebês</title>
+      <link>http://localhost:1313/posts/0014-jardinheira-bebe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0014-jardinheira-bebe/</guid>
+      <description>Jadineira em lã anti-alérgica para bebês.</description>
+    </item>
+    <item>
+      <title>Kit Sapatinho e Luva</title>
+      <link>http://localhost:1313/posts/0012-sapatinho/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0012-sapatinho/</guid>
+      <description>Kit de sapatinho e luva para bebê.</description>
+    </item>
+    <item>
+      <title>Meias para Bebê</title>
+      <link>http://localhost:1313/posts/0020-meias-bebe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0020-meias-bebe/</guid>
+      <description>Meias em lã anti-alérgica para bebês.</description>
+    </item>
+    <item>
+      <title>Nossas possibilidades de atendimento</title>
+      <link>http://localhost:1313/fluxo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fluxo/</guid>
+      <description> Peças que eu consiga confeccionar Prazo de envio a ser combinado Preços negociados antecipadamente Envio pelos Correios </description>
+    </item>
+    <item>
+      <title>Política de Tratamento de Dados</title>
+      <link>http://localhost:1313/politica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/politica/</guid>
+      <description>Este site, não coleta quaisquer dados dos nossos usuários, nem armazena informações relativas ao tráfego, nem quaisquer outros dados de nossos usuários, sejam estes pessoais ou anônimos. Você pode explicitamente nos informar seu nome e seu e-mail, se assim o desejar, usando o formulário de contato disponível. Estes e-mails serão usados em caráter estritamente pessoal entre você e o responsável por este site.&#xA;Ressaltamos, porém, que nossas páginas fazem uso de serviços de terceiros, ou seja, utiliza os serviços de hospedagem da Vercel, bem como os serviços de tráfego e/ou armazenamento de e-mail do Google, ImprovMx e EmailJS, sobre os quais não temos ingerência.</description>
+    </item>
+    <item>
+      <title>Saia Bebê em Lã</title>
+      <link>http://localhost:1313/posts/0026-saia-bebe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0026-saia-bebe/</guid>
+      <description>Saia em lã anti-alérgica para bebês.</description>
+    </item>
+    <item>
+      <title>Saia Cintura Alta</title>
+      <link>http://localhost:1313/posts/0006-saia-cintura-alta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0006-saia-cintura-alta/</guid>
+      <description>Saia cintura alta adulto.</description>
+    </item>
+    <item>
+      <title>Saída de Praia</title>
+      <link>http://localhost:1313/posts/0015-saida-de-praia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0015-saida-de-praia/</guid>
+      <description>Saída de praia em fio de algodão.</description>
+    </item>
+    <item>
+      <title>Sandalinha Bebê</title>
+      <link>http://localhost:1313/posts/0013-sadalinha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0013-sadalinha/</guid>
+      <description>Sandalinha de dedo para bebê.</description>
+    </item>
+    <item>
+      <title>Sapatinho Bebê</title>
+      <link>http://localhost:1313/posts/0018-sapatinho-bebe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0018-sapatinho-bebe/</guid>
+      <description>Sapatinho de luxo com pérolas.</description>
+    </item>
+    <item>
+      <title>Sapatinho Luxo</title>
+      <link>http://localhost:1313/posts/0018-sapatinho-luxo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0018-sapatinho-luxo/</guid>
+      <description>Sapatinho de luxo de amarrar.</description>
+    </item>
+    <item>
+      <title>Short Feminino Adulto</title>
+      <link>http://localhost:1313/posts/0008-short-feminino/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0008-short-feminino/</guid>
+      <description>Short feminino ideal para vestir com o croped rosa.</description>
+    </item>
+    <item>
+      <title>Shortinho para Meninas</title>
+      <link>http://localhost:1313/posts/0019-short-crianca/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0019-short-crianca/</guid>
+      <description>Shortinho para meninas em linha degradê.</description>
+    </item>
+    <item>
+      <title>Sobre nós</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>Sou uma entusiasta do crochê e criei este site apenas para compartilhar minhas criações com as minhas amigas. Não somos uma empresa, nem produzimos em escala. Trata-se de um trabalho artesanal e pessoal, feito com muito carinho. Para saber mais sobre o nosso trabalho, nos acompanhe nas nossas redes sociais.&#xA;&amp;nbsp; Consulte as nossas possibilidades de atendimento Conheça a nossa Política de Tratamento de Dados </description>
+    </item>
+    <item>
+      <title>Sousplat Luxo</title>
+      <link>http://localhost:1313/posts/0002-supla-luxo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0002-supla-luxo/</guid>
+      <description>Item decorativo ideal para ocasiões elegantes.</description>
+    </item>
+    <item>
+      <title>Sousplat Natalino</title>
+      <link>http://localhost:1313/posts/0001-supla-natalino/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0001-supla-natalino/</guid>
+      <description>Item decorativo ideal para o período das festas de fim de ano.</description>
+    </item>
+    <item>
+      <title>Top em Crochê com Brilho</title>
+      <link>http://localhost:1313/posts/0023-top-com-brilho/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0023-top-com-brilho/</guid>
+      <description>Top adulto em crochê com brilho.</description>
+    </item>
+    <item>
+      <title>Touca Infantil</title>
+      <link>http://localhost:1313/posts/0021-touca-infantil/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0021-touca-infantil/</guid>
+      <description>Touca para meninas, a partir de 3 anos.</description>
+    </item>
+    <item>
+      <title>Vestidinho de bebê</title>
+      <link>http://localhost:1313/posts/0007-vestidinho-bebe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0007-vestidinho-bebe/</guid>
+      <description>Vestidinho de bebê em lã anti-alérgica.</description>
+    </item>
+    <item>
+      <title>Vestidinho de bebê</title>
+      <link>http://localhost:1313/posts/0007-vestidinho-linha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0007-vestidinho-linha/</guid>
+      <description>Vestidinho de bebê feito de linha.</description>
+    </item>
+  </channel>
+</rss>

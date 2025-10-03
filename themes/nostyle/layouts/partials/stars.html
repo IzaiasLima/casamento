@@ -1,0 +1,15 @@
+{{ $page := . }}
+
+{{ if $page.Params.stars }}
+    {{ range seq 5 }}
+        {{if lt . (add $page.Params.stars 1) }}
+        <i class="text-warning fa fa-star"></i>
+        {{ else }}
+        <i class="text-muted fa fa-star"></i>
+        {{ end }}
+    {{ end }}
+{{ else }}
+    {{ range seq 5 }}
+    <i class="text-muted fa fa-star"></i>
+    {{ end }}
+{{ end }}

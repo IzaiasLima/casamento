@@ -1,0 +1,32 @@
+{{ $res := where .Site.RegularPages "Params.suggest" true }}
+{{ range $res }}
+
+<div class="col-12 col-md-4 mb-4">
+    <div class="card h-100">
+
+        <a href="{{ .RelPermalink }}">
+            <img src="/posts/images/{{ .Params.image }}" class="img-fluid" alt="{{ .Params.image }}">
+        </a>
+
+        <div class="card-body">
+            <ul class="list-unstyled d-flex justify-content-between">
+                
+                <li> {{- partial "stars.html" . -}} </li>
+
+                {{if .Params.price }}
+                <li class="text-warning text-right">R$ {{ .Params.price }}</li>
+                {{ end }}
+            </ul>
+            <div class="text-align-left">
+                <h2 class="h2">
+                    <a class="text-decoration-none" href="{{ .RelPermalink }}">
+                        {{ .Title }}
+                    </a>
+                </h2>
+                <p>{{ .Params.summary}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

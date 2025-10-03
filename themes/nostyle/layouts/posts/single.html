@@ -1,0 +1,78 @@
+{{ define "main" }}
+
+<main aria-label="Content">
+    <section class="bg-light mt-5 p-5">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <img id="product-detail" class="card-img img-fluid" src="/posts/images/{{ .Params.image }}"
+                            alt="{{ .Params.image }}">
+                    </div>
+                    <div class="row">
+                        {{- partial "slide_images.html" . -}}
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="h1">{{ .Title }}</h1>
+                            <h2 class="h2">{{ .Params.summary }}</h2>
+
+                            {{ if .Params.price }}
+                            <p class="h3 py-2">R$ {{ .Params.price }}</p>
+                            {{ end }}
+
+                            <p class="py-2">
+                                {{- partial "stars.html" . -}}
+                            </p>
+
+                            {{ if .Params.model }}
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h5>Modelo:</h5>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>{{ .Params.model }}</strong></p>
+                                </li>
+                            </ul>
+
+                            {{ end }}
+
+                            <h5>Detalhes:</h5>
+
+                            <div class="media-card">
+                                {{ if .Params.caption }}
+                                <p class="caption">{{ .Params.caption }}</p>
+                                {{ end }}
+                            </div>
+
+                            {{ .Content }}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/product-carousel.js"></script>
+
+</main>
+
+<div class="tags text-center py-5">
+    {{ with .GetTerms "tags" }}
+        <h3>Produtos nesta categoria</h3>
+        <ul class="list-inline"></ul>
+            {{ range $i, $tag := . }}
+                <li class="list-inline-item">
+                    {{ if $i }} <span>|&nbsp;</span> {{ end }}
+                    <a class="tags text-decoration-none text-uppercase" href="{{ $tag.Permalink }}">{{ $tag.LinkTitle }}</a>
+                </li>
+            {{ end }}
+        </ul>
+    {{ end }}
+</div>
+
+{{ end }}

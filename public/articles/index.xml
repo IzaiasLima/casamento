@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Artes da Lu</title>
+    <link>http://localhost:1313/articles/</link>
+    <description>Recent content in Articles on Artes da Lu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 03 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bolo de pão de queijo</title>
+      <link>http://localhost:1313/articles/bolo-de-queijo/</link>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bolo-de-queijo/</guid>
+      <description>Fácil e rápido de preparar.</description>
+    </item>
+    <item>
+      <title>Bolo doce de queijo</title>
+      <link>http://localhost:1313/articles/bolo-doce-de-queijo/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bolo-doce-de-queijo/</guid>
+      <description>Fácil e rápido de preparar com poucos ingredientes.</description>
+    </item>
+    <item>
+      <title>Bolo de cenoura</title>
+      <link>http://localhost:1313/articles/bolo-de-cenoura/</link>
+      <pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bolo-de-cenoura/</guid>
+      <description>Esse bolo de cenoura no liquidificador é muito prático.</description>
+    </item>
+    <item>
+      <title>Bolo de milho verde</title>
+      <link>http://localhost:1313/articles/bolo-de-milho/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bolo-de-milho/</guid>
+      <description>Uma delícia feita com pouquíssimos ingredientes.</description>
+    </item>
+    <item>
+      <title>Receita de pão de batata</title>
+      <link>http://localhost:1313/articles/pao-de-batata/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/pao-de-batata/</guid>
+      <description>Receita de pão delicioso e prático que até eu consigo fazer! Essa receita eu aprendi com o Paulo Henrique, de Santa Maria do Pará.</description>
+    </item>
+    <item>
+      <title>Torta Salgada</title>
+      <link>http://localhost:1313/articles/torta-salgada/</link>
+      <pubDate>Tue, 03 Mar 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/torta-salgada/</guid>
+      <description>Esta é uma receita mais elaborada e trabalhosa, mas o resultado é saboroso.</description>
+    </item>
+    <item>
+      <title>Pão Francês Caseiro</title>
+      <link>http://localhost:1313/articles/pao-frances/</link>
+      <pubDate>Wed, 15 Oct 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/pao-frances/</guid>
+      <description>Esta é uma receita um pouco mais elaborada, porém muito gratificante de fazer. Foi publicada pelo Jornal Nacional lá pelo ano de 2007.</description>
+    </item>
+    <item>
+      <title>Pizza de Liquidificador</title>
+      <link>http://localhost:1313/articles/pizza-de-liquidificador/</link>
+      <pubDate>Wed, 15 Oct 2003 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/pizza-de-liquidificador/</guid>
+      <description>Facílima de fazer, ideal para um lanche rápido. Não sei que é o autor. Aprendi a fazê-la em Castanhal-PA, em 1996.</description>
+    </item>
+  </channel>
+</rss>

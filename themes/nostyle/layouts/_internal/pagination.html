@@ -1,0 +1,38 @@
+{{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+<ul class="pagination pagination-lg justify-content-end">
+
+    <li class="page-item">
+        {{ if .Paginator.HasPrev }}
+        <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0"
+            href="{{ .Paginator.Prev.URL }}"><i class="fa-solid fa-chevron-left"></i></a>
+        {{ else }}
+        <span class="disabled page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0">
+            <i class="fa-solid fa-chevron-left"></i></span>
+        {{ end }}
+    </li>
+
+    {{ range .Paginator.Pagers }}
+    {{ if eq .PageNumber $.Paginator.PageNumber }}
+    <li class="page-item disabled">
+        <span class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark">{{ .PageNumber
+            }}</span>
+    </li>
+    {{ else }}
+    <li class="page-item">
+        <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="{{ .URL }}">{{
+            .PageNumber }}</a>
+    </li>
+    {{ end }}
+    {{ end }}
+
+    <li class="page-item">
+        {{ if .Paginator.HasNext }}
+        <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0"
+            href="{{ .Paginator.Next.URL }}"><i class="fa-solid fa-chevron-right"></i></a>
+        {{ else }}
+        <span class="disabled page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0">
+            <i class="fa-solid fa-chevron-right"></i></span>
+        {{ end }}
+    </li>
+</ul>
+{{ end }}

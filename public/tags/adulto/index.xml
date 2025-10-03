@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adulto on Artes da Lu</title>
+    <link>http://localhost:1313/tags/adulto/</link>
+    <description>Recent content in Adulto on Artes da Lu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <atom:link href="http://localhost:1313/tags/adulto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blusa Jovial</title>
+      <link>http://localhost:1313/posts/0003-blusa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0003-blusa/</guid>
+      <description>Blusa em estilo moderno, ideal para mulheres jovens.</description>
+    </item>
+    <item>
+      <title>Croped Margarida</title>
+      <link>http://localhost:1313/posts/0005-croped-margarida/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0005-croped-margarida/</guid>
+      <description>Croped em crochê com uma margarida na gola.</description>
+    </item>
+    <item>
+      <title>Croped Sereia</title>
+      <link>http://localhost:1313/posts/0004-croped-sereia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0004-croped-sereia/</guid>
+      <description>Croped sereia em crochê.</description>
+    </item>
+    <item>
+      <title>Saia Cintura Alta</title>
+      <link>http://localhost:1313/posts/0006-saia-cintura-alta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0006-saia-cintura-alta/</guid>
+      <description>Saia cintura alta adulto.</description>
+    </item>
+    <item>
+      <title>Short Feminino Adulto</title>
+      <link>http://localhost:1313/posts/0008-short-feminino/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0008-short-feminino/</guid>
+      <description>Short feminino ideal para vestir com o croped rosa.</description>
+    </item>
+    <item>
+      <title>Top em Crochê com Brilho</title>
+      <link>http://localhost:1313/posts/0023-top-com-brilho/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/0023-top-com-brilho/</guid>
+      <description>Top adulto em crochê com brilho.</description>
+    </item>
+  </channel>
+</rss>

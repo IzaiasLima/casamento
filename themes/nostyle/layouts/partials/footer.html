@@ -1,0 +1,54 @@
+<!-- Start Footer -->
+<footer class="bg-dark pt-5" id="tempaltemo_footer">
+    <div id="contact" class="container">
+        <div class="row">
+
+            <div class="col-md-4 pt-2">
+                <img class="brand-img" src="{{ $.Site.Params.logotipo2 | relURL}}" alt="logotipo">
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li>
+                        <i class="fa fa-envelope fa-fw"></i>
+                        <a class="text-decoration-none" href="mailto:lucietelima@gmail.com">lucietelima@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                        <a class="text-decoration-none" 
+                            href="https://www.instagram.com/luciete.artes/profilecard/?igsh=b212aXpycG4zZHRk">
+                            @luciete.artes
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 pt-2">
+                <h2 class="h2 text-light border-bottom pb-3 border-light">Informações</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li><a class="text-decoration-none" href="/about">Sobre nós</a></li>
+                    <li><a class="text-decoration-none" href="/fluxo">Fluxo de atendimento</a></li>
+                    <li><a class="text-decoration-none" href="/politica">Nossas políticas</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 bg-black py-3">
+        <div class="container">
+            <div class="row pt-2">
+                <div class="col-12">
+                    <p class="text-left text-light">
+                        Copyright &copy; 2025 <b>Artes da Lu</b>
+                        | Designed by <a rel="sponsored" href="https://templatemo.com/page/1" target="_blank">TemplateMo</a>
+                            | Powered by <a rel="sponsored" href="https://gohugo.io"
+                                target="_blank">Hugo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ range .Site.Params.custom_js -}}
+    <script type="text/javascript" src="{{ . | absURL }}.js"></script>
+    {{- end }}
+
+</footer>
+<!-- End Footer -->
