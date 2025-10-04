@@ -1,6 +1,9 @@
 <div class="row">
 
     {{ range .Paginator.Pages }}
+
+    {{ if not .Params.featured }}
+
     <div class="col-md-4">
         <div class="card mb-4 product-wap rounded-0">
             <div class="card rounded-0">
@@ -14,10 +17,6 @@
                     <a href="{{ .Permalink }}" class="h3 text-decoration-none">{{ .Title }}</a>
                 </div>
 
-                <ul class="list-unstyled d-flex justify-content-center mb-1">
-                    <li> {{- partial "stars.html" .Page -}} </li>
-                </ul>
-
                 {{ if .Params.price }}
                 <p class="text-center text-warning fa-close fw-bolder mb-0">R$ {{ .Params.price }}</p>
                 {{ else }}
@@ -26,5 +25,6 @@
             </div>
         </div>
     </div>
+    {{ end }}
     {{ end }}
 </div>

@@ -1,7 +1,5 @@
 ---
 title: "Blusa Jovial"
-featured: true
-active: false
 suggest: true
 stars: 4
 price: 195,00

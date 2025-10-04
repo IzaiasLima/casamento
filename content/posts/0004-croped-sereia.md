@@ -1,7 +1,5 @@
 ---
 title: "Croped Sereia"
-featured: false
-active: false
 suggest: false
 stars: 4
 price: 195,00 

@@ -14,12 +14,5 @@
       <guid>http://localhost:1313/posts/0015-biquini-de-praia/</guid>
       <description>Biquini de praia com bojo.</description>
     </item>
-    <item>
-      <title>Saída de Praia</title>
-      <link>http://localhost:1313/posts/0015-saida-de-praia/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/0015-saida-de-praia/</guid>
-      <description>Saída de praia em fio de algodão.</description>
-    </item>
   </channel>
 </rss>

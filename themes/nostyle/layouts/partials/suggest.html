@@ -10,9 +10,6 @@
 
         <div class="card-body">
             <ul class="list-unstyled d-flex justify-content-between">
-                
-                <li> {{- partial "stars.html" . -}} </li>
-
                 {{if .Params.price }}
                 <li class="text-warning text-right">R$ {{ .Params.price }}</li>
                 {{ end }}

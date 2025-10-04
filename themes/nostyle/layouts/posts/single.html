@@ -24,10 +24,6 @@
                             <p class="h3 py-2">R$ {{ .Params.price }}</p>
                             {{ end }}
 
-                            <p class="py-2">
-                                {{- partial "stars.html" . -}}
-                            </p>
-
                             {{ if .Params.model }}
                             <ul class="list-inline">
                                 <li class="list-inline-item">
@@ -60,19 +56,5 @@
     <script src="/js/product-carousel.js"></script>
 
 </main>
-
-<div class="tags text-center py-5">
-    {{ with .GetTerms "tags" }}
-        <h3>Produtos nesta categoria</h3>
-        <ul class="list-inline"></ul>
-            {{ range $i, $tag := . }}
-                <li class="list-inline-item">
-                    {{ if $i }} <span>|&nbsp;</span> {{ end }}
-                    <a class="tags text-decoration-none text-uppercase" href="{{ $tag.Permalink }}">{{ $tag.LinkTitle }}</a>
-                </li>
-            {{ end }}
-        </ul>
-    {{ end }}
-</div>
 
 {{ end }}

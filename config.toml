@@ -11,19 +11,14 @@ paginate = 50
 [menu]
 
 [[menu.main]]
-    name = "Home"
+    name = "Início"
     url = "/"
     weight = 1
 
 [[menu.main]]
-    name = "Produtos"
-    url = "/posts/"
+    name = "Lista de Presentes"
+    url = "#presentes"
     weight = 10
-
-[[menu.main]]
-    name = "Receitas"
-    url = "/articles/"
-    weight = 15
 
 [[menu.main]]
     name = "Sobre nós"

@@ -23,10 +23,6 @@
                         <a href="{{ .Permalink }}" class="h3 text-decoration-none">{{ .Title }}</a>
                     </div>
 
-                    <ul class="list-unstyled d-flex justify-content-center mb-1">
-                        <li> {{- partial "stars.html" .Page -}} </li>
-                    </ul>
-
                     {{ if .Params.price }}
                     <p class="text-center mb-0">R$ {{ .Params.price }}</p>
                     {{ else }}

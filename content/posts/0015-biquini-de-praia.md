@@ -1,9 +1,6 @@
 ---
 title: "Biquini de Praia"
 suggest: true
-featured: true
-Active: true
-stars: 5
 price: 85,00
 tags: ["moda jovem", "moda praia"]
 image: "0015-biquini-de-praia.webp"

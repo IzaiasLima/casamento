@@ -22,46 +22,11 @@
       <description>Blusa em estilo moderno, ideal para mulheres jovens.</description>
     </item>
     <item>
-      <title>Croped Margarida</title>
-      <link>http://localhost:1313/posts/0005-croped-margarida/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/0005-croped-margarida/</guid>
-      <description>Croped em crochê com uma margarida na gola.</description>
-    </item>
-    <item>
       <title>Croped Sereia</title>
       <link>http://localhost:1313/posts/0004-croped-sereia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/0004-croped-sereia/</guid>
       <description>Croped sereia em crochê.</description>
-    </item>
-    <item>
-      <title>Saia Cintura Alta</title>
-      <link>http://localhost:1313/posts/0006-saia-cintura-alta/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/0006-saia-cintura-alta/</guid>
-      <description>Saia cintura alta adulto.</description>
-    </item>
-    <item>
-      <title>Saída de Praia</title>
-      <link>http://localhost:1313/posts/0015-saida-de-praia/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/0015-saida-de-praia/</guid>
-      <description>Saída de praia em fio de algodão.</description>
-    </item>
-    <item>
-      <title>Short Feminino Adulto</title>
-      <link>http://localhost:1313/posts/0008-short-feminino/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/0008-short-feminino/</guid>
-      <description>Short feminino ideal para vestir com o croped rosa.</description>
-    </item>
-    <item>
-      <title>Top em Crochê com Brilho</title>
-      <link>http://localhost:1313/posts/0023-top-com-brilho/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/0023-top-com-brilho/</guid>
-      <description>Top adulto em crochê com brilho.</description>
     </item>
   </channel>
 </rss>
