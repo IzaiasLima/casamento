@@ -1,0 +1,76 @@
+#menu-bar {
+    background-color: var(--bg-color);
+}
+
+div.brand {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.brand-img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-img img {
+    width: 70px;
+    aspect-ratio: 1 / 1;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--bg-menu);
+    z-index: 100;
+}
+
+@keyframes navShow {
+    to {
+        opacity: 1;
+        transform: translateX(calc(100% - 500px));
+    }
+}
+
+@keyframes navClose {
+    from {
+        opacity: 1;
+        transform: translateX(calc(100% - 500px));
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+nav.show {
+    animation: navShow .3s ease-out forwards;
+}
+
+nav.close {
+    animation: navClose .5s ease-in forwards;
+}
+
+nav>ul {
+    line-height: 1.5em;
+}
+
+.menu-open {
+    padding-top: 10px;
+}
+
+.menu-close {
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    background-color: var(--bg-color);
+}

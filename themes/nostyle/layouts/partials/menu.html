@@ -1,0 +1,25 @@
+<div id="menu-bar">
+    <div class="brand">
+        <div class="brand-img">
+            <img class="" src="{{ $.Site.Params.logotipo | relURL}}" alt="logotipo">
+            <h3>Luciana e Kaio</h3>
+        </div>
+        <a id="menu-open" href="#" onclick="showMenu()"><span class="fa fa-bars"></span></a>
+    </div>
+    
+    <nav id="menu" onclick="closeMenu()">
+        <ul>
+            <li>
+                <a class="menu-close" href="#"><span class="fa fa-times"></span></a>
+            </li>
+            <li>Home</li>
+            <li>Lista de Presentes</li>
+            <li>
+                <a href="#local">Local do Evento</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+        </ul>
+    </nav>
+</div>

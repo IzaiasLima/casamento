@@ -1,7 +1,7 @@
 baseURL = "https://www.luciete.com.br"
 theme = "nostyle"
 relativeURLs = true
-title = "Artes da Lu"
+title = "Casamento Luciana e Kaio"
 languageCode = "pt-br"
 defaultContentLanguage = "pt-br"
 removePathAccents = true
@@ -38,16 +38,13 @@ series = "series"
 
 [params]
   custom_css = [
-    "/css/bootstrap.min",
-    "/css/templatemo",
-    "/css/custom"]
+    "css/base", 
+    "css/menu",
+    "css/hero"]
 
   custom_js = [
-    "/js/jquery-1.11.0.min",
-    "/js/jquery-migrate-1.2.1.min",
-    "/js/bootstrap.bundle.min",
-    "/js/templatemo",
-    "/js/custom"]
+    "/js/menu"
+    ]
 
   show_description = true
   slogan = "Um espaço de Criação e Inspiração"

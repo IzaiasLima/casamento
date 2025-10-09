@@ -1,28 +1,33 @@
 {{ $res := where .Site.RegularPages "Params.suggest" true }}
+
 {{ range $res }}
 
-<div class="col-12 col-md-4 mb-4">
-    <div class="card h-100">
+<div class="card">
 
+    <div class="image">
         <a href="{{ .RelPermalink }}">
             <img src="/posts/images/{{ .Params.image }}" class="img-fluid" alt="{{ .Params.image }}">
         </a>
+    </div>
 
-        <div class="card-body">
-            <ul class="list-unstyled d-flex justify-content-between">
-                {{if .Params.price }}
-                <li class="text-warning text-right">R$ {{ .Params.price }}</li>
-                {{ end }}
-            </ul>
-            <div class="text-align-left">
-                <h2 class="h2">
-                    <a class="text-decoration-none" href="{{ .RelPermalink }}">
-                        {{ .Title }}
-                    </a>
-                </h2>
-                <p>{{ .Params.summary}}</p>
-            </div>
-        </div>
+    <div class="title">
+        <h2 class="h2">
+            <a class="text-decoration-none" href="{{ .RelPermalink }}">
+                {{ .Title }}
+            </a>
+        </h2>
+    </div>
+
+    <div class="price">
+        <ul class="card-price list-unstyled d-flex justify-content-between">
+            {{if .Params.price }}
+            <li class="text-warning text-right">R$ {{ .Params.price }}</li>
+            {{ end }}
+        </ul>
+    </div>
+
+    <div class="text">
+        <p>{{ .Params.summary}}</p>
     </div>
 </div>
 

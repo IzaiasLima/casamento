@@ -18,14 +18,17 @@
         {{ end }}
     </title>
 
-    <link rel="apple-touch-icon" href="{{ $.Site.Params.appleIcon | relURL }}" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{ $.Site.Params.favicon | relURL }}" />
+    <link href="{{ $.Site.Params.appleIcon | relURL }}" rel="apple-touch-icon" />
+    <link href="{{ $.Site.Params.favicon | relURL }}" rel="shortcut icon" />
 
     {{ range .Site.Params.custom_css -}}
-    <link type="text/css" rel="stylesheet" href="{{ . | absURL }}.css">
+    <link href="{{ . | absURL }}.css" rel="stylesheet" />
     {{- end }}
 
-    <link rel="stylesheet" type="text/css" 
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
 </head>

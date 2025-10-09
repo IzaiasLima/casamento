@@ -3,95 +3,33 @@
 
 {{- partial "head.html" . -}}
 
-<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+<body>
+   {{- partial "menu.html" . -}}
 
-    {{- partial "menu_bar.html" . -}}
+   <div id="content">
+      {{- partial "hero.html" . -}}
 
-    <!-- Start featured products -->
-    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            {{- partial "top_posts.html" . -}}
-        </div>
-        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel"
-            role="button" data-bs-slide="prev">
-            <i class="fas fa-chevron-left"></i>
-        </a>
-        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel"
-            role="button" data-bs-slide="next">
-            <i class="fas fa-chevron-right"></i>
-        </a>
-    </div>
-    <!-- End featured products -->
+      <div class="container inverse">
+         <div class="cards">
+            {{- partial "info.html" . -}}
+         </div>
+      </div>
 
-    <!-- Start Suggest Product -->
-    <section class="container py-0" id="presentes">
-        <div class="row text-center py-5">
-            <div class="col-lg-6 py-3 m-auto">
-                <h1 class="h1">Lista de Presentes</h1>
-                <p>
-                    Escolhemos alguns produtos que acreditamos que você vai amar. Todos planejados e produzidos
-                    com carinho para atender às suas necessidades.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            
+      <div class="container inverse">
+         <h2>Lista de Presentes</h2>
+         <div class="cards">
             {{- partial "suggest.html" . -}}
-
-            <h2 class="h2">
-                <a class="text-warning text-decoration-none" href="/posts">
-                    Ver tudo 
-                    <i class="fa fa-solid fa-chevron-circle-right"></i></a>
-            </h2>
-        </div>
+         </div>
+      </div>
 
 
-    </section>
-    <!-- End Suggest Product -->
+      <div class="container">
+         {{- partial "footer.html" . -}}
+      </div>
 
-    <!-- Nosso fluxo de entregas -->
-    <section id="fluxo" class="bg-light">
-        <div class="container py-5">
-            <div class="row text-center pt-5 pb-3">
-                <div class="col-md-12 m-auto">
-                    <h1 class="h1 pb-5">Nossas possibilidades de atendimento</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 pb-5">
-                    <div class="h-100 py-5 services-icon-wap shadow">
-                        <div class="h1 text-success text-center"><i class="fa-solid fa-list"></i></div>
-                        <h2 class="h5 mt-4 px-2 text-center">Peças que eu consiga confeccionar</h2>
-                    </div>
-                </div>
+      <a id="top-btn" class="hide" href="#menu-bar"><span class="fa fa-circle-up"></span></a>
 
-                <div class="col-md-6 col-lg-3 pb-5">
-                    <div class="h-100 py-5 services-icon-wap shadow">
-                        <div class="h1 text-success text-center"><i class="fa-solid fa-calendar-days"></i></div>
-                        <h2 class="h5 mt-4 px-2 text-center">Prazo de envio a ser combinado</h2>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 pb-5">
-                    <div class="h-100 py-5 services-icon-wap shadow">
-                        <div class="h1 text-success text-center"><i class="fa-solid fa-credit-card"></i></div>
-                        <h2 class="h5 mt-4 px-2 text-center">Preços negociados antecipadamente</h2>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 pb-5">
-                    <div class="h-100 py-5 services-icon-wap shadow">
-                        <div class="h1 text-success text-center"><i class="fa-solid fa-truck"></i></div>
-                        <h2 class="h5 mt-4 px-2 px-2 text-center">Envio pelos Correios</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Nosso fluxo de entregas -->
-
-    {{- partial "footer.html" . -}}
-
+   </div>
 </body>
 
 </html>

@@ -1,26 +1,32 @@
 <ol class="carousel-indicators">
-    {{ $res := where .Site.RegularPages "Params.featured" true }}
+    {{ $res := where .Site.RegularPages "Params.suggest" true }}
     {{ range $key, $val := $res }}
     <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="{{ $key }}" class="active"></li>
     {{ end }}
 </ol>
 
-{{ $res := where .Site.RegularPages "Params.featured" true }}
+{{ $res := where .Site.RegularPages "Params.suggest" true }}
 {{ range $res }}
 
 <div class="carousel-item {{ if .Params.active }} active {{ end }}">
-    <div class="container__" style="width: 100vw;">
-        <div class="row p-0">
-            <div style="position: relative;" class="col-lg-12 mb-0 d-flex align-items-center">
-                <div class="mx-auto mb-3 accordion-body__ col-lg-12 order-lg-last_">
-                    <img style="width: 100vw;" src="/posts/images/{{ .Params.image }}" class="img-fluid__" alt="{{ .Params.image }}">
-                    <div style="position: absolute; top: 85vh; left: 35vw;">
-                        <h1 class="h1 text-light"> {{ .Title }} </h1>
-                        <h3 class="h2 text-light">
-                            {{ .Params.caption}}
-                            {{ .Params.summary}}
-                        </h3>
-                    </div>
+    <div class="container">
+        <div class="row p-5">
+            <div class="mx-auto mb-3 accordion-body col-lg-5 order-lg-last">
+                <a href="{{ .RelPermalink }}">
+                    <img src="/posts/images/{{ .Params.image }}" class="img-fluid" alt="{{ .Params.image }}">
+                </a>
+            </div>
+            <div class="col-lg-7 mb-0 d-flex align-items-center">
+                <div class="text-align-left">
+                    <h1 class="h1">
+                        <a class="text-decoration-none" href="{{ .RelPermalink }}">
+                            {{ .Title }}
+                        </a>
+                    </h1>
+                    <h3 class="h2">
+                        {{ .Params.caption}}
+                        {{ .Params.summary}}
+                    </h3>
                 </div>
             </div>
         </div>
