@@ -4,27 +4,27 @@
 
     {{ if not .Params.sugest }}
 
-    <div class="col-md-4">
-        <div class="card mb-4 product-wap rounded-0">
-            <div class="card rounded-0">
-                <a href="{{ .Permalink }}" class="h3 text-decoration-none">
-                    <img class="card-img rounded-0 img-fluid" src="/posts/images/{{ .Params.image }}">
-                </a>
+    <!-- <div class="col-md-4"> -->
+    <div class="card inverse flex item w-20 mb-4 product-wap rounded-0">
+        <div class="card image">
+            <a href="{{ .Permalink }}" class="h3 text-decoration-none">
+                <img class="card-img rounded-0 img-fluid" src="/posts/images/{{ .Params.image }}">
+            </a>
+        </div>
+
+        <div class="card title">
+            <div class="product-title mb-3">
+                <a href="{{ .Permalink }}" class="h3 text-decoration-none">{{ .Title }}</a>
             </div>
 
-            <div class="card-body">
-                <div class="product-title mb-3">
-                    <a href="{{ .Permalink }}" class="h3 text-decoration-none">{{ .Title }}</a>
-                </div>
-
-                {{ if .Params.price }}
-                <p class="text-center text-warning fa-close fw-bolder mb-0">R$ {{ .Params.price }}</p>
-                {{ else }}
-                <p class="text-center mb-0">&nbsp;</p>
-                {{ end }}
-            </div>
+            {{ if .Params.price }}
+            <p class="text-center text-warning fa-close fw-bolder mb-0">R$ {{ .Params.price }}</p>
+            {{ else }}
+            <p class="text-center mb-0">&nbsp;</p>
+            {{ end }}
         </div>
     </div>
+    <!-- </div> -->
     {{ end }}
     {{ end }}
 </div>

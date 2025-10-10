@@ -2,9 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/adulto/</loc>
+    <loc>http://localhost:1313/posts/0015-biquini-de-praia-copy/</loc>
   </url><url>
     <loc>http://localhost:1313/posts/0015-biquini-de-praia/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/0003-blusa-copy-2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/0003-blusa-copy/</loc>
   </url><url>
     <loc>http://localhost:1313/posts/0003-blusa/</loc>
   </url><url>
@@ -22,8 +26,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/hero/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/moda/</loc>
-  </url><url>
     <loc>http://localhost:1313/tags/moda-jovem/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/moda-praia/</loc>
@@ -37,5 +39,7 @@
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/0001-history/</loc>
   </url>
 </urlset>

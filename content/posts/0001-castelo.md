@@ -1,6 +1,6 @@
 ---
 title: "Castelo de Saint-Andrews, Gramado-RS"
-card: true
+info: true
 active: true
 image: "castelo.webp"
 ---

@@ -1,8 +1,10 @@
 <footer>
-    <div id="about" class="footer">
-        <img src="{{ $.Site.Params.logotipo | relURL}}" alt="logotipo">
+    <div id="about" class="footer flex">
+        <div class="">
+            <img class="w-100" src="{{ $.Site.Params.logotipo | relURL}}" alt="logotipo">
+        </div>
 
-        <div class="container">
+        <div class="container flex">
             <ul>
                 <li>
                     <div class="footer-brand">
@@ -21,9 +23,4 @@
             </ul>
         </div>
     </div>
-
-    {{ range .Site.Params.custom_js -}}
-    <script type="text/javascript" src="{{ . | absURL }}.js"></script>
-    {{- end }}
-
 </footer>

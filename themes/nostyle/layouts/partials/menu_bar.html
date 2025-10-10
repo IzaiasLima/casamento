@@ -1,26 +1,37 @@
-<!-- Header -->
-<nav id="menu" class="navbar navbar-expand-lg navbar-light shadow">
-    <div class="container d-flex justify-content-between align-items-center">
-
-        <a class="navbar-brand logo align-self-center" href="/">
-            <img class="brand-img" src="{{ $.Site.Params.logotipo | relURL}}" alt="Logotipo">
-        </a>
-
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
-            <div class="flex-fill">
-                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-
-                    {{ range .Site.Menus.main }}
-                    <li><a class="nav-link {{ if eq .URL $.Params.page }} active {{ end }} " href="{{ .URL }}">{{ .Name }}</a></li>
-                    
-                    {{ end }}
-                </ul>
-            </div>
+<div id="menu-bar">
+    <div class="brand">
+        <div class="brand-img">
+            <img class="" src="{{ $.Site.Params.logotipo | relURL}}" alt="logotipo">
+            <h3>Luciana e Kaio</h3>
         </div>
+        <a id="menu-open" href="#" onclick="showMenu(event)"><span class="fa fa-bars"></span></a>
     </div>
-</nav>
-<!-- Close Header -->
+
+    <nav id="menu" onclick="closeMenu()">
+        <ul>
+            <li>
+                <a class="menu-close" href="#" onclick="closeMenu(event)"><span class="fa fa-times"></span></a>
+            </li>
+
+            <li> 
+                <a href="#top"> Home </a>
+            </li>
+
+            <li>
+                <a href="#suggest"> Lista de Presentes </a>
+            </li>
+
+            <li>
+                <a href="#history"> Nossa História </a>
+            </li>
+
+            <li>
+                <a href="#local"> Local do Evento </a>
+            </li>
+            
+            <li>
+                <a href="#about"> Contato </a>
+            </li>
+        </ul>
+    </nav>
+</div>

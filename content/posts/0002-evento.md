@@ -1,6 +1,6 @@
 ---
 title: "Confraternização em Brasília"
-card: true
+info: true
 active: true
 image: "brasilia.jpg"
 ---

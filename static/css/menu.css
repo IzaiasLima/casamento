@@ -1,5 +1,10 @@
 #menu-bar {
-    background-color: var(--bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--bg-menu);
+    z-index: 3;
 }
 
 div.brand {
@@ -64,12 +69,12 @@ nav>ul {
     line-height: 1.5em;
 }
 
-.menu-open {
-    padding-top: 10px;
+#menu-open {
+    padding: 10px 15px;
 }
 
 .menu-close {
-    padding: 0;
+    padding: 10px 5px;
     display: flex;
     justify-content: end;
     background-color: var(--bg-color);

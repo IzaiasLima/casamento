@@ -1,0 +1,25 @@
+<section id="history">
+    <div class="container">
+        <div class="cards">
+            {{ $res := where .Site.RegularPages "Params.history" true }}
+
+            {{ range $res }}
+
+            <div class="card inverse w-100">
+                <div class="image">
+                    <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
+                </div>
+                <div class="title">
+                    <h1> {{ .Title }} </h1>
+                </div>
+                <div class="message">
+                    <p>
+                        {{ .Content }}
+                    </p>
+                </div>
+            </div>
+
+            {{ end }}
+        </div>
+    </div>
+</section>

@@ -3,33 +3,29 @@
 
 {{- partial "head.html" . -}}
 
-<body>
-   {{- partial "menu.html" . -}}
+<body id="home">
+   {{- partial "menu_bar.html" . -}}
 
    <div id="content">
       {{- partial "hero.html" . -}}
 
-      <div class="container inverse">
-         <div class="cards">
-            {{- partial "info.html" . -}}
-         </div>
-      </div>
+      {{- partial "info.html" . -}}
 
-      <div class="container inverse">
-         <h2>Lista de Presentes</h2>
-         <div class="cards">
-            {{- partial "suggest.html" . -}}
-         </div>
-      </div>
+      {{- partial "history.html" . -}}
 
+      {{- partial "suggest.html" . -}}
 
-      <div class="container">
-         {{- partial "footer.html" . -}}
-      </div>
+      {{- partial "footer.html" . -}}
 
-      <a id="top-btn" class="hide" href="#menu-bar"><span class="fa fa-circle-up"></span></a>
-
+      
    </div>
+   
+   <a id="top-btn" class="hide" href="#home"><span class="fa fa-circle-up"></span></a>
+   
+   {{ range .Site.Params.custom_js -}}
+   <script type="text/javascript" src="{{ . | absURL }}.js"></script>
+   {{- end }}
+
 </body>
 
 </html>

@@ -24,45 +24,50 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
-</head><body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
-<nav id="menu" class="navbar navbar-expand-lg navbar-light shadow">
-    <div class="container d-flex justify-content-between align-items-center">
-
-        <a class="navbar-brand logo align-self-center" href="../../">
-            <img class="brand-img" src="../../images/logotipo.png" alt="Logotipo">
-        </a>
-
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
-            <div class="flex-fill">
-                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-
-                    
-                    <li><a class="nav-link  " href="../../">Início</a></li>
-                    
-                    
-                    <li><a class="nav-link  " href="#presentes">Lista de Presentes</a></li>
-                    
-                    
-                    <li><a class="nav-link  " href="../../about/">Sobre nós</a></li>
-                    
-                    
-                    <li><a class="nav-link  " href="#contact">Contato</a></li>
-                    
-                    
-                </ul>
-            </div>
+</head><body data-spy="scroll" data-offset="50" data-target=".navbar-collapse"><div id="menu-bar">
+    <div class="brand">
+        <div class="brand-img">
+            <img class="" src="../../images/logotipo.png" alt="logotipo">
+            <h3>Luciana e Kaio</h3>
         </div>
+        <a id="menu-open" href="#" onclick="showMenu(event)"><span class="fa fa-bars"></span></a>
     </div>
-</nav>
-<section id="posts">
+
+    <nav id="menu" onclick="closeMenu()">
+        <ul>
+            <li>
+                <a class="menu-close" href="#" onclick="closeMenu(event)"><span class="fa fa-times"></span></a>
+            </li>
+
+            <li> 
+                <a href="#top"> Home </a>
+            </li>
+
+            <li>
+                <a href="#suggest"> Lista de Presentes </a>
+            </li>
+
+            <li>
+                <a href="#history"> Nossa História </a>
+            </li>
+
+            <li>
+                <a href="#local"> Local do Evento </a>
+            </li>
+            
+            <li>
+                <a href="#about"> Contato </a>
+            </li>
+        </ul>
+    </nav>
+</div><section id="posts">
         <div class="container">
 
 <main aria-label="Content">
@@ -74,7 +79,7 @@
                         <img id="product-detail" class="card-img img-fluid" src="../../posts/images/0004-croped.webp"
                             alt="0004-croped.webp">
                     </div>
-                    <div class="row"></div>
+                    
                 </div>
 
                 <div class="col-lg-7 mt-5">
@@ -113,10 +118,12 @@
 
         </div>
     </section><footer>
-    <div id="about" class="footer">
-        <img src="../../images/logotipo.png" alt="logotipo">
+    <div id="about" class="footer flex">
+        <div class="">
+            <img class="w-100" src="../../images/logotipo.png" alt="logotipo">
+        </div>
 
-        <div class="container">
+        <div class="container flex">
             <ul>
                 <li>
                     <div class="footer-brand">
@@ -135,9 +142,6 @@
             </ul>
         </div>
     </div>
-
-    <script type="text/javascript" src="http://localhost:1313/js/menu.js"></script>
-
 </footer></body>
 
 </html>

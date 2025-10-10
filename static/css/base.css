@@ -3,18 +3,20 @@
     --primary-color: hsl(from var(--base-color) h s calc(l + 40));
     --secondary-color: hsl(from var(--base-color) h s calc(l + 35));
     --bg-color: hsl(from var(--base-color) h s calc(l - 47));
-    --bg-inverse-color: hsl(from var(--secondary-color) h s calc(l + 95));
+    --bg-inverse: hsl(from var(--secondary-color) h s calc(l + 95));
     --bg-hero: hsl(from var(--base-color) h s calc(l - 50) / 30%);
-    --bg-header: hsl(from var(--base-color) h s calc(l - 50) / 30%);
+    --bg-header: hsl(from var(--base-color) h s calc(l - 50) / 20%);
     --bg-menu: hsl(from var(--base-color) h s calc(l - 47) / 90%);
+    --bg-card: hsl(from var(--secondary-color) h s calc(l + 7));
+    --bg-msg-card: hsl(from var(--secondary-color) h s calc(l + 10));
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    font-size: 18pt;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20pt;
     overflow: hidden;
 }
 
@@ -28,13 +30,7 @@ body {
     background-color: var(--bg-color);
 }
 
-/* temporario */
-#local {
-    padding: 30%;
-}
-
-/* fim temporario */
-
+/* CONTAINER */
 #content {
     display: flex;
     flex-direction: column;
@@ -47,11 +43,96 @@ body {
 }
 
 .inverse {
-    background-color: var(--bg-inverse-color);
+    background-color: var(--bg-inverse);
     color: var(--base-color);
 }
 
+.shadow {
+    box-shadow: 1px 7px 25px 1px rgba(255, 0, 0, 0.6);
+}
 
+.small .shadow {
+    box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75) !important;
+}
+
+.inverse .shadow {
+    box-shadow: 1px 7px 25px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* FLEXBOX */
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.item {
+    flex-grow: 1;
+    margin: 15px;
+    text-align: center;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.end {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+    text-align: center;
+}
+
+.center-itens {
+    align-items: center;
+    text-align: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.evenly {
+    justify-content: space-evenly
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+
+.w-20 {
+    width: 20% !important;
+}
+
+.g-50 {
+    gap: 50;
+}
+
+/* TEXT */
 span.fa {
     text-align: left;
     font-size: 1.3em;
@@ -68,6 +149,7 @@ img {
     width: 100%;
     display: block;
     height: auto;
+    border-radius: 10px;
 }
 
 h1,
@@ -76,6 +158,8 @@ h3 {
     font-family: "Cinzel", serif;
     color: var(--secondary-color);
     text-align: center;
+    padding: 15px 0;
+    line-height: 105%;
 }
 
 .inverse h1,
@@ -102,25 +186,31 @@ a {
 }
 
 
-/* CARD */
+/* CARD  */
 .cards {
-    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 70%;
-    padding: 60px 30px;
+    justify-content: left;
+    flex-flow: row wrap;
+    width: 80vw;
+    padding: 40px 20px;
     margin: 0 auto;
-    gap: 50px
+    gap: 40px
+}
+
+@media (width <=960px) {
+    .cards {
+        width: 100vw;
+        padding: 25px 10px;
+    }
 }
 
 .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    min-width: 350px;
+    width: 30%;
+    /* flex: 1; */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 1px 7px 25px 1px rgba(0,0,0,0.6);
+    background-color: var(--bg-card);
 }
 
 .card .image {
@@ -128,49 +218,40 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--bg-header);
 }
+
 .card .title {
     position: static;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px;
+    padding: 30px 15px;
     background-color: var(--bg-header);
 }
 
-.card .text {
-    width: 100%;
-    padding: 5px;
-    background-color: var(--bg-inverse-color);
+.card .message {
+    flex: 1;
+    padding: 30px 5px;
+    background-color: var(--bg-msg-card);
+    & p {
+        padding: 20px;
+    }
 }
 
-
 /* FOOTER */
-
 .footer {
-    display: flex;
-    align-content: center;
     gap: 30px;
     padding: 20px;
 }
 
-.footer div {
-    padding: 12px;
-}
-
-.footer img {
-    width: 25%;
-    height: 25%;
-}
-
 .footer-brand,
 .footer-link {
+    padding: 12px;
     display: flex;
     align-content: center;
 }
 
-/* top buttom */
+/* TOP BUTTOM */
 #top-btn {
     position: fixed;
     bottom: 20px;
@@ -182,7 +263,6 @@ a {
 }
 
 #top-btn:hover {
-    /* visibility: hidden; */
     opacity: 1;
     bottom: 23px;
 }

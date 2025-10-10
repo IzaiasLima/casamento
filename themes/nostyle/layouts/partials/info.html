@@ -1,20 +1,25 @@
-{{ $res := where .Site.RegularPages "Params.card" true }}
-
-{{ range $res }}
-
-<div class="card">
-    <div class="image">
-        <img src="/posts/images/{{ .Params.image }}" class="img-fluid__" alt="{{ .Params.image }}">
-        {{ .Params.caption}}
-    </div>
-    <div class="title">
-        <h2> {{ .Title }} </h2>
-    </div>
-    <div class="text">
-        <p>
-            {{ .Content }}
-        </p>
+<section id="local">
+    <div class="container inverse">
+        <div class="cards">
+            {{ $res := where .Site.RegularPages "Params.info" true }}
+            
+            {{ range $res }}
+            
+            <div class="card w-100">
+                <div class="image">
+                    <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
+            </div>
+            <div class="title">
+                <h1> {{ .Title }} </h1>
+            </div>
+            <div class="message">
+                <p>
+                    {{ .Content }}
+                </p>
+            </div>
+        </div>
+        
+        {{ end }}
     </div>
 </div>
-
-{{ end }}
+</section>
