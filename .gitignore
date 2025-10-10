@@ -11,7 +11,7 @@ wheels/
 
 # hugo generator
 .hugo_build.lock
-/public/
-/isableFastRender/
-/disableFastRender/
+public/
+isableFastRender/
+disableFastRender/
 **/_gen/

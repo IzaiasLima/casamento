@@ -3,10 +3,12 @@
 
 {{- partial "head.html" . -}}
 
-<body id="home">
+<body id="home" style="position: relative;">
+
    {{- partial "menu_bar.html" . -}}
 
    <div id="content">
+
       {{- partial "hero.html" . -}}
 
       {{- partial "info.html" . -}}
@@ -17,11 +19,10 @@
 
       {{- partial "footer.html" . -}}
 
-      
    </div>
-   
+
    <a id="top-btn" class="hide" href="#home"><span class="fa fa-circle-up"></span></a>
-   
+
    {{ range .Site.Params.custom_js -}}
    <script type="text/javascript" src="{{ . | absURL }}.js"></script>
    {{- end }}

@@ -1,37 +1,27 @@
-<div id="menu-bar">
-    <div class="brand">
-        <div class="brand-img">
-            <img class="" src="{{ $.Site.Params.logotipo | relURL}}" alt="logotipo">
+<nav>
+    <div class="logo-mobile">
+        <a href="#home">
+            <img src="{{ $.Site.Params.logotipo | relURL}}" alt="logotipo">
             <h3>Luciana e Kaio</h3>
-        </div>
-        <a id="menu-open" href="#" onclick="showMenu(event)"><span class="fa fa-bars"></span></a>
+        </a>
     </div>
 
-    <nav id="menu" onclick="closeMenu()">
-        <ul>
-            <li>
-                <a class="menu-close" href="#" onclick="closeMenu(event)"><span class="fa fa-times"></span></a>
-            </li>
+    <ul class="nav-links">
+        <div class="logo">
+            <a href="#home">
+                <img src="{{ $.Site.Params.logotipo | relURL}}" alt="logotipo">
+                <h3>Luciana e Kaio</h3>
+            </a>
+        </div>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#history">Nossa História</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
 
-            <li> 
-                <a href="#top"> Home </a>
-            </li>
-
-            <li>
-                <a href="#suggest"> Lista de Presentes </a>
-            </li>
-
-            <li>
-                <a href="#history"> Nossa História </a>
-            </li>
-
-            <li>
-                <a href="#local"> Local do Evento </a>
-            </li>
-            
-            <li>
-                <a href="#about"> Contato </a>
-            </li>
-        </ul>
-    </nav>
-</div>
+    <button class="bars">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</nav>

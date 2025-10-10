@@ -1,36 +1,14 @@
+const hamburger = document.querySelector('.bars');
+const navLinks = document.querySelector('.nav-links');
 
-// menu - exibir/ocultar
-const menu = document.getElementById('menu');
-const content = document.getElementById('content');
-
-function showMenu(evt) {
-    evt.preventDefault();
-    menu.classList.add('show');
-    menu.classList.remove('close');
-}
-
-function closeMenu(evt) {
-    evt.preventDefault();
-    menu.classList.remove('show');
-    menu.classList.add('close');
-}
-
-content.addEventListener('click',function(event) {
-    closeMenu(event);
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
 });
 
-// botao scroll-up
-function showHideScrollUpBtn(scrPos) {
-    const topBtn = document.getElementById('top-btn');
-
-    if (scrPos > 0) {
-        topBtn.classList.replace('hide', 'show');
-    } else {
-        topBtn.classList.replace('show', 'hide');
-    }
-}
-
-window.addEventListener('scroll', () => {
-    const scrPos = window.scrollY - window.innerHeight;
-    showHideScrollUpBtn(scrPos)
-})
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});

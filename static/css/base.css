@@ -9,6 +9,8 @@
     --bg-menu: hsl(from var(--base-color) h s calc(l - 47) / 90%);
     --bg-card: hsl(from var(--secondary-color) h s calc(l + 7));
     --bg-msg-card: hsl(from var(--secondary-color) h s calc(l + 10));
+
+    --break-point: 960px;
 }
 
 * {
@@ -17,6 +19,11 @@
     box-sizing: border-box;
     font-family: "Segoe UI", sans-serif;
     font-size: 20pt;
+    text-decoration: none;
+    list-style: none;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
     overflow: hidden;
 }
 
@@ -32,6 +39,7 @@ body {
 
 /* CONTAINER */
 #content {
+    position: static;
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -52,7 +60,7 @@ body {
 }
 
 .small .shadow {
-    box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75) !important;
+    box-shadow: 3px 3px 13px 0px rgba(0, 0, 0, 0.75) !important;
 }
 
 .inverse .shadow {
@@ -189,25 +197,25 @@ a {
 /* CARD  */
 .cards {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     flex-flow: row wrap;
-    width: 80vw;
-    padding: 40px 20px;
+    width: 100vw;
+    padding: 25px 10px;
     margin: 0 auto;
     gap: 40px
 }
 
-@media (width <=960px) {
+@media (width >=960px) {
     .cards {
-        width: 100vw;
-        padding: 25px 10px;
+        justify-content: left;
+        width: 80vw;
+        padding: 40px 20px;
     }
 }
 
 .card {
     min-width: 350px;
     width: 30%;
-    /* flex: 1; */
     padding: 20px;
     border-radius: 10px;
     background-color: var(--bg-card);
@@ -233,6 +241,7 @@ a {
     flex: 1;
     padding: 30px 5px;
     background-color: var(--bg-msg-card);
+
     & p {
         padding: 20px;
     }
