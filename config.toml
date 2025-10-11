@@ -43,8 +43,7 @@ series = "series"
     "css/hero"]
 
   custom_js = [
-    "/js/menu"
-    ]
+    "/js/menu"]
 
   show_description = true
   slogan = "Um espaço de Criação e Inspiração"

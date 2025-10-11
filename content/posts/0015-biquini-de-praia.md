@@ -2,10 +2,6 @@
 title: "Biquini de Praia"
 suggest: true
 price: 85,00
-tags: ["moda jovem", "moda praia"]
 image: "0015-biquini-de-praia.webp"
-summary: "Biquini de praia com bojo."
+summary: "Biquini de praia moderno estiloso, com bojo, para mulheres jovens."
 ---
-
-**Tamanhos:** P | M  
-**Observação**: Somente a parte de cima do biquini.

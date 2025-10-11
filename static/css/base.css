@@ -4,11 +4,14 @@
     --secondary-color: hsl(from var(--base-color) h s calc(l + 35));
     --bg-color: hsl(from var(--base-color) h s calc(l - 47));
     --bg-inverse: hsl(from var(--secondary-color) h s calc(l + 95));
+    --text-color:  hsl(from var(--base-color) h s calc(l - 90));
     --bg-hero: hsl(from var(--base-color) h s calc(l - 50) / 30%);
     --bg-header: hsl(from var(--base-color) h s calc(l - 50) / 20%);
     --bg-menu: hsl(from var(--base-color) h s calc(l - 47) / 90%);
     --bg-card: hsl(from var(--secondary-color) h s calc(l + 7));
-    --bg-msg-card: hsl(from var(--secondary-color) h s calc(l + 10));
+    --bg-message: hsl(from var(--secondary-color) h s calc(l + 10));
+    --bg-input: hsl(from var(--base-color) h s calc(l + 20) / 5%);
+    --bg-input-focus: hsl(from var(--base-color) h s calc(l + 30) / 5%);
 
     --break-point: 960px;
 }
@@ -43,11 +46,24 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
+    padding: 0;
+}
+
+@media(width >=1200px) {
+    #content {
+        padding: 0 10vw;
+    }
+}
+
+@media(width >=1920px) {
+    #content {
+        padding: 0 20vw;
+    }
 }
 
 .container {
-    display: flex;
     position: relative;
+    display: flex;
 }
 
 .inverse {
@@ -120,20 +136,12 @@ body {
     justify-content: space-evenly
 }
 
+.vw-100 {
+    width: 100vw !important;
+}
+
 .w-100 {
     width: 100% !important;
-}
-
-.w-50 {
-    width: 50% !important;
-}
-
-.w-30 {
-    width: 30% !important;
-}
-
-.w-20 {
-    width: 20% !important;
 }
 
 .g-50 {
@@ -184,6 +192,11 @@ h3 {
     font-size: clamp(.8rem, 3vw, 1rem);
 }
 
+hr {
+    width: 100%;
+    border-bottom: solid var(--base-color) 2px;
+}
+
 ul {
     list-style: none;
 }
@@ -199,23 +212,26 @@ a {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    width: 100vw;
-    padding: 25px 10px;
+    width: 100%;
+    padding: 25px 0px;
     margin: 0 auto;
-    gap: 40px
+    gap: 40px;
+
+    &.grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    }
 }
 
 @media (width >=960px) {
     .cards {
-        justify-content: left;
-        width: 80vw;
-        padding: 40px 20px;
+        padding: 40px 0px;
     }
 }
 
 .card {
-    min-width: 350px;
-    width: 30%;
+    min-width: 380px;
+    /* width: 30%; */
     padding: 20px;
     border-radius: 10px;
     background-color: var(--bg-card);
@@ -240,7 +256,7 @@ a {
 .card .message {
     flex: 1;
     padding: 30px 5px;
-    background-color: var(--bg-msg-card);
+    background-color: var(--bg-message);
 
     & p {
         padding: 20px;
@@ -250,7 +266,13 @@ a {
 /* FOOTER */
 .footer {
     gap: 30px;
-    padding: 20px;
+    padding: 50px 20px;
+}
+
+@media (width <=960px) {
+    .footer img {
+        padding-top: 15px;
+    }
 }
 
 .footer-brand,
@@ -258,6 +280,20 @@ a {
     padding: 12px;
     display: flex;
     align-content: center;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 60px 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+
+    & p {
+        padding: 50px 20px;
+    }
 }
 
 /* TOP BUTTOM */
@@ -286,4 +322,53 @@ a {
 
 #top-btn span.fa {
     font-size: 1.9rem;
+}
+
+/* FORMS */
+form {
+    display: flex;
+    flex-direction: column;
+
+    & label {
+        font-size: 0.9em;
+        color: var(--secondary-color);
+    }
+
+    & input {
+        height: 2.5rem;
+        padding: 0 10px;
+        outline: none;
+        border-bottom: solid var(--secondary-color) 2px;
+        margin-bottom: 2em;
+        color: var(--secondary-color);
+        caret-color: var(--base-color);
+        background-color: var(--bg-input);
+    }
+
+    & input:focus {
+        border-bottom: solid var(--base-color) 3px;
+    }
+
+    & textarea {
+        padding: 10px;
+        background-color: var(--bg-input);
+        caret-color: var(--base-color);
+    }
+
+    & textarea:focus {
+        outline: none;
+        border-left: solid var(--base-color) 3px;
+        background-color: var(--bg-input-focus);
+    }
+
+    input[type=submit] {
+        min-width: 350px;
+        max-width: fit-content;
+        margin-top: 40px;
+        align-self: center;
+        border: none;
+        color: var(--text-color);
+        background-color: rgb(251, 226, 0);
+        border-radius: 50px;
+    }
 }

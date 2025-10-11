@@ -1,16 +1,9 @@
 <div id="hero-container">
-    <ol class="carousel-indicators">
-        {{ $res := where .Site.RegularPages "Params.hero" true }}
-        {{ range $key, $val := $res }}
-        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="{{ $key }}" class="active"></li>
-        {{ end }}
-    </ol>
-
     {{ $res := where .Site.RegularPages "Params.hero" true }}
     {{ range $res }}
 
     <div class="hero-image">
-        <img src="/posts/images/{{ .Params.image }}" class="img-fluid__" alt="{{ .Params.image }}">
+        <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
     </div>
     <div class="hero-cover">
         <div class="hero-text">

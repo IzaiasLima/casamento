@@ -6,22 +6,21 @@
 <body id="home" style="position: relative;">
 
    {{- partial "menu_bar.html" . -}}
+   {{- partial "hero.html" . -}}
 
    <div id="content">
-
-      {{- partial "hero.html" . -}}
-
       {{- partial "info.html" . -}}
-
       {{- partial "history.html" . -}}
-
       {{- partial "suggest.html" . -}}
-
+      {{- partial "contact.html" . -}}
       {{- partial "footer.html" . -}}
-
    </div>
 
    <a id="top-btn" class="hide" href="#home"><span class="fa fa-circle-up"></span></a>
+
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      type = "text/javascript"
+   </script>
 
    {{ range .Site.Params.custom_js -}}
    <script type="text/javascript" src="{{ . | absURL }}.js"></script>
