@@ -3,16 +3,22 @@
 
 {{- partial "head.html" . -}}
 
-<body id="home" style="position: relative;">
+<body id="home">
 
    {{- partial "menu_bar.html" . -}}
    {{- partial "hero.html" . -}}
 
    <div class="content">
       {{- partial "info.html" . -}}
-      {{- partial "history.html" . -}}
+
+   </div>
+
+   {{- partial "history.html" . -}}
+   {{- partial "dialog.html" . -}}
+
+   <div class="content">
       {{- partial "suggest.html" . -}}
-      {{- partial "contact.html" . -}}
+      <!-- {{- partial "contact.html" . -}} -->
       {{- partial "footer.html" . -}}
    </div>
 

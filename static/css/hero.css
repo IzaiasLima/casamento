@@ -3,48 +3,46 @@
     width: 100vw;
     margin-top: 95px;
     aspect-ratio: 16/9;
-}
 
-.hero-cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: inherit;
-    padding: 35% 5% 10%;
-    aspect-ratio: 16/9;
-    background-color: var(--bg-hero);
-    background-size: cover;
-}
-
-.hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: inherit;
-
-    & img {
+    & .cover {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: inherit;
+        padding: 35% 5% 10%;
         aspect-ratio: 16/9;
-        border-radius: 0;
+        background-color: var(--bg-filter);
+        background-size: cover;
     }
-}
 
-.hero-image .hero-text {
-    display: flex;
-    height: inherit;
-    flex-direction: column;
-    justify-content: start;
-}
+    & .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: inherit;
 
-h1.hero {
-    font-size: clamp(1.2rem, 10vw, 3rem);
-    line-height: 100%;
-}
+        & img {
+            width: inherit;
+            aspect-ratio: 16/9;
+            border-radius: 0;
+        }
+    }
 
-h2.hero {
-    font-family: "Moon Dance", cursive;
-    font-size: clamp(1rem, 5vw, 2rem);
-    font-weight: 100;
-    color: var(--secondary-color);
-    line-height: 90%;
+    & .message {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    h1 {
+        font-size: clamp(1.2rem, 10vw, 3rem);
+        line-height: 100%;
+    }
+
+    h2 {
+        font-family: "Moon Dance", cursive;
+        font-size: clamp(1rem, 5vw, 2rem);
+        font-weight: 100;
+        color: var(--secondary-color);
+        line-height: 90%;
+    }
 }

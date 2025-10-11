@@ -1,0 +1,55 @@
+<style>
+  dialog {
+    padding: 20px;
+    justify-self: center;
+    align-self: center;
+    width: clamp(500px, 70vw, 1000px);
+    /* color: aliceblue; */
+    background-color: var(--bg-color);
+    z-index: 1000;
+    /* display: none; */
+
+    border-radius: 10px;
+
+    .show {
+      display: block;
+    }
+
+    header {
+      padding: 0;
+      padding-bottom: 30px;
+    }
+
+    h1 {
+      padding: 0 !important;
+    }
+  }
+</style>
+
+<dialog class="shadow" open>
+  <article>
+    <header>
+      <button aria-label="Close" rel="prev"></button>
+      <div class="">
+        <h1 class="">Contato</h1>
+        <p>fale conosco, queremos conhecer você</p>
+      </div>
+    </header>
+    <div class="container flex w-100">
+      <div class="w-100">
+
+
+        <form id="contact-form">
+          <label for="user_name">Nome</label>
+          <input type="text" placeholder="Informe seu nome" name="user_name" class="form-control" required>
+          <label for="user_email">Email ou telefone</label>
+          <input type="email" placeholder="Informe seu e-mail ou seu telefone de contato" name="user_email"
+            class="form-control" required>
+          <textarea name="message" class="form-control" rows="3" placeholder="Mensagem" required></textarea>
+
+          <input type="submit" value="Enviar Mensagem" class="form-control">
+        </form>
+      </div>
+    </div>
+  </article>
+</dialog>

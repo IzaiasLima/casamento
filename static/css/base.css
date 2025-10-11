@@ -3,17 +3,16 @@
     --primary-color: hsl(from var(--base-color) h s calc(l + 40));
     --secondary-color: hsl(from var(--base-color) h s calc(l + 35));
     --bg-color: hsl(from var(--base-color) h s calc(l - 47));
-    --bg-inverse: hsl(from var(--secondary-color) h s calc(l + 95));
-    --text-color:  hsl(from var(--base-color) h s calc(l - 90));
-    --bg-hero: hsl(from var(--base-color) h s calc(l - 50) / 30%);
+    --bg-section: hsl(from var(--secondary-color) h s calc(l + 95));
+    --text-color: hsl(from var(--base-color) h s calc(l + 90));
+    --text-inverse-color: hsl(from var(--base-color) h s calc(l - 90));
+    --bg-filter: hsl(from var(--base-color) h s calc(l - 50) / 30%);
     --bg-header: hsl(from var(--base-color) h s calc(l - 50) / 20%);
     --bg-menu: hsl(from var(--base-color) h s calc(l - 47) / 90%);
     --bg-card: hsl(from var(--secondary-color) h s calc(l + 7));
     --bg-message: hsl(from var(--secondary-color) h s calc(l + 10));
     --bg-input: hsl(from var(--base-color) h s calc(l + 20) / 5%);
     --bg-input-focus: hsl(from var(--base-color) h s calc(l + 30) / 5%);
-
-    --break-point: 960px;
 }
 
 * {
@@ -36,11 +35,32 @@ html {
 }
 
 body {
-    color: var(--primary-color);
+    
     background-color: var(--bg-color);
 }
 
 /* CONTAINER */
+.section {
+    position: relative;
+    left: 0;
+    width: 100vw !important;
+    width: inherit;
+    background-color: var(--bg-section);
+    background-size: cover;
+
+    .image {
+        top: 0;
+        left: 0;
+        width: inherit;
+
+        & img {
+            width: inherit;
+            aspect-ratio: 16/9;
+            border-radius: 0;
+        }
+    }
+}
+
 .content {
     position: static;
     display: flex;
@@ -49,13 +69,13 @@ body {
     padding: 0;
 }
 
-@media(width >= 1100px) {
+@media(width >=1100px) {
     .content {
         padding: 0 10vw;
     }
 }
 
-@media(width >= 1910px) {
+@media(width >=1910px) {
     .content {
         padding: 0 20vw;
     }
@@ -67,20 +87,20 @@ body {
 }
 
 .inverse {
-    background-color: var(--bg-inverse);
+    background-color: var(--bg-section);
     color: var(--base-color);
 }
 
 .shadow {
-    box-shadow: 1px 7px 25px 1px rgba(255, 0, 0, 0.6);
+    box-shadow: 1px 7px 25px 1px rgba(255, 255, 255, 0.6);
 }
 
-.small .shadow {
-    box-shadow: 3px 3px 13px 0px rgba(0, 0, 0, 0.75) !important;
+.small.shadow, .small .shadow {
+    box-shadow: 3px 3px 13px 0px rgba(0, 0, 0, 0.95) !important;
 }
 
-.inverse .shadow {
-    box-shadow: 1px 7px 25px 1px rgba(0, 0, 0, 0.6);
+.inverse.shadow, .inverse .shadow {
+    box-shadow: 1px 7px 25px 1px rgba(0, 0, 0, 0.95);
 }
 
 /* FLEXBOX */
@@ -149,6 +169,11 @@ body {
 }
 
 /* TEXT */
+p{
+    color: var(--text-color);
+    line-height: 1.2em;
+}
+
 span.fa {
     text-align: left;
     font-size: 1.3em;
@@ -231,7 +256,6 @@ a {
 
 .card {
     min-width: 380px;
-    /* width: 30%; */
     padding: 20px;
     border-radius: 10px;
     background-color: var(--bg-card);
@@ -266,7 +290,6 @@ a {
 /* FOOTER */
 .footer {
     gap: 30px;
-    /* padding: 50px 20px; */
     padding-top: 50px;
 }
 
@@ -290,7 +313,7 @@ a {
     padding: 60px 0px;
     align-items: center;
     justify-content: center;
-    
+
     & p {
         padding: 50px 20px;
         font-size: 0.7rem;
@@ -343,9 +366,9 @@ form {
         height: 2.5rem;
         padding: 0 10px;
         outline: none;
-        border-bottom: solid var(--secondary-color) 2px;
+        border-bottom: solid var(--text-inverse-color) 2px;
         margin-bottom: 2em;
-        color: var(--secondary-color);
+        color: var(--text-color);
         caret-color: var(--base-color);
         background-color: var(--bg-input);
     }
@@ -356,6 +379,7 @@ form {
 
     & textarea {
         padding: 10px;
+        color: var(--text-color);
         background-color: var(--bg-input);
         caret-color: var(--base-color);
     }
@@ -372,7 +396,7 @@ form {
         margin-top: 40px;
         align-self: center;
         border: none;
-        color: var(--text-color);
+        color: var(--text-inverse-color);
         background-color: rgb(251, 226, 0);
         border-radius: 50px;
     }
