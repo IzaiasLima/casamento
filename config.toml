@@ -6,7 +6,6 @@ languageCode = "pt-br"
 defaultContentLanguage = "pt-br"
 removePathAccents = true
 enableInlineShortcodes = true
-paginate = 50
 
 [menu]
 
@@ -30,7 +29,6 @@ paginate = 50
     url = "#contact"
     weight = 30
 
-
 [taxonomies]
 category = "categories"
 tag = "tags"
@@ -40,7 +38,8 @@ series = "series"
   custom_css = [
     "css/base", 
     "css/menu",
-    "css/hero"]
+    "css/hero",
+    "css/history"]
 
   custom_js = [
     "/js/menu"]
@@ -50,8 +49,7 @@ series = "series"
   description = "Acreditamos que a papelaria pode ir além do funcional, e por isso, cada produto Purpry Papers é pensado para encantar e surpreender."
   favicon = "/icons/favicon.png"
   appleIcon = "/icons/apple-icon.png"
-  logotipo = "/images/logotipo.png"
-  logotipo2 = "/images/logotipo2.png"
+  logotipo = "/images/logotipo.svg"
   
 [privacy]
 

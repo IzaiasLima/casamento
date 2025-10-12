@@ -1,0 +1,41 @@
+.section {
+    margin: 100px 0;
+}
+
+.hist-image {
+    display: none !important;
+}
+
+.mobile-image {
+    display: block !important;
+}
+
+@media (width >=768px) {
+    .hist-image {
+        display: block !important;
+    }
+
+    .mobile-image {
+        display: none !important;
+    }
+}
+
+.history-text {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px 23vw;
+
+    & .title {
+        padding-bottom: 3rem;
+    }
+
+    & .message {
+        & p {
+            padding: 0.5em 0;
+            text-align: center;
+            font-size: clamp(0.6rem, 0.3rem + 0.9vw, 1.5rem);
+        }
+    }
+}

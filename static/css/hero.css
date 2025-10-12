@@ -1,7 +1,7 @@
 #hero-container {
     position: relative;
     width: 100vw;
-    margin-top: 95px;
+    /* margin-top: 95px; */
     aspect-ratio: 16/9;
 
     & .cover {
@@ -9,9 +9,10 @@
         top: 0;
         left: 0;
         width: inherit;
-        padding: 35% 5% 10%;
-        aspect-ratio: 16/9;
-        background-color: var(--bg-filter);
+        padding: 33% 10%;
+        /* aspect-ratio: 16/9; */
+        /* background-color: transparent; */
+        /* background-color: var(--bg-filter); */
         background-size: cover;
     }
 
@@ -34,15 +35,18 @@
     }
 
     h1 {
-        font-size: clamp(1.2rem, 10vw, 3rem);
-        line-height: 100%;
+        /* font-size: clamp(7rem, 50vw, 7rem); */
+        font-size: clamp(3rem, 7vw + 2rem, 9rem);
+        /* font-weight: 100; */
+        /* letter-spacing: 110%; */
+        /* line-height: 120%; */
     }
 
     h2 {
-        font-family: "Moon Dance", cursive;
-        font-size: clamp(1rem, 5vw, 2rem);
-        font-weight: 100;
-        color: var(--secondary-color);
+        /* font-family: "Moon Dance", cursive; */
+        font-size: clamp(1rem, 2vw + 0.7rem, 4rem);
+        /* font-weight: 100; */
+        /* color: var(--secondary-color); */
         line-height: 90%;
     }
 }

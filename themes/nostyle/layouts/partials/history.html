@@ -5,10 +5,10 @@
 
             {{ range $res }}
 
-            <div class="card inverse w-100">
-                <div class="image">
-                    <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
-                </div>
+            <img class="hist-image" src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
+            <img class="mobile-image" src="/posts/images/{{ .Params.image_mobile }}" alt="{{ .Params.image_mobile }}">
+
+            <div class="history-text">
                 <div class="title">
                     <h1> {{ .Title }} </h1>
                 </div>
@@ -18,8 +18,8 @@
                     </p>
                 </div>
             </div>
-
-            {{ end }}
         </div>
+
+        {{ end }}
     </div>
 </section>

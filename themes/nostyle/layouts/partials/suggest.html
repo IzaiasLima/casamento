@@ -1,47 +1,56 @@
-<div id="suggest" class="container flex col center">
-    <div>
-        <h1>Lista sugestões de Presentes</h1>
-    </div>
 
-    <div class="cards grid">
+<style>
+    #suggest{
+        margin: 100px 0;
+    }
+</style>
 
-        {{ $res := where .Site.RegularPages "Params.suggest" true }}
-
-        {{ range $res }}
-
+<section id="suggest">
+    <div class="container flex col center">
         <div>
-            <div class="card inverse">
-                <div class="image">
-                    <a href="{{ .RelPermalink }}">
-                        <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
-                    </a>
-                </div>
-
-                <div class="title">
-                    <h2 class="h2">
-                        <a class="text-decoration-none" href="{{ .RelPermalink }}">
-                            {{ .Title }}
-                        </a>
-                    </h2>
-                </div>
-
-                <div class="price">
-                    <ul class="card-price">
-                        {{if .Params.price }}
-                        <li class="text-warning text-right">R$ {{ .Params.price }}</li>
-                        {{ end }}
-                    </ul>
-                </div>
-
-                <div class="message">
-                    <p>{{ .Params.summary}}</p>
-                </div>
-            </div>
-            <form action="">
-                <input type="submit" value="Presentear" class="form-control">
-            </form>
+            <h1>Lista sugestões de Presentes</h1>
         </div>
-        {{ end }}
 
+        <div class="cards grid">
+
+            {{ $res := where .Site.RegularPages "Params.suggest" true }}
+
+            {{ range $res }}
+
+            <div>
+                <div class="card inverse">
+                    <div class="image">
+                        <a href="{{ .RelPermalink }}">
+                            <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
+                        </a>
+                    </div>
+
+                    <div class="title">
+                        <h2 class="h2">
+                            <a class="text-decoration-none" href="{{ .RelPermalink }}">
+                                {{ .Title }}
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div class="price">
+                        <ul class="card-price">
+                            {{if .Params.price }}
+                            <li class="text-warning text-right">R$ {{ .Params.price }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+
+                    <div class="message">
+                        <p>{{ .Params.summary}}</p>
+                    </div>
+                </div>
+                <form action="">
+                    <input type="submit" value="Presentear">
+                </form>
+            </div>
+            {{ end }}
+
+        </div>
     </div>
-</div>
+</section>

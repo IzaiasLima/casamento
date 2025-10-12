@@ -1,25 +1,61 @@
-<section id="local">
-    <div class="container inverse">
-        <div class="cards">
-            {{ $res := where .Site.RegularPages "Params.info" true }}
-            
-            {{ range $res }}
-            
-            <div class="card">
-                <div class="image">
-                    <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
+<style>
+    .cards.grid {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+
+        h1 {
+            text-align: left;
+            justify-self: start;
+        }
+    }
+
+    @media(width >=768px) {
+        .cards.grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .info .message p {
+        padding: 0.5em 0;
+        text-align: left;
+        font-size: clamp(0.5rem, 0.4rem + .8vw, 1.3rem);
+    }
+</style>
+
+<section id="info">
+    <div class="content info">
+
+        {{ $res := where .Site.RegularPages "Params.info" true }}
+
+        {{ range $res }}
+
+        <div class="cards grid">
+
+            <div>
+                <div class="title">
+                    <h1> {{ .Title }} </h1>
+                </div>
+
+                <div class="message">
+                    <p>{{ .Content }}</p>
+                </div>
+
+                <form action="">
+                    <input class="start" type="submit" value="{{ .Params.link_text }}">
+                </form>
+
             </div>
-            <div class="title">
-                <h1> {{ .Title }} </h1>
+
+            <div class="image">
+                <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
             </div>
-            <div class="message">
-                <p>
-                    {{ .Content }}
-                </p>
+
+            <div class="image">
+                <img src="/posts/images/{{ .Params.image2 }}" alt="{{ .Params.image2 }}">
             </div>
         </div>
-        
         {{ end }}
     </div>
-</div>
 </section>
