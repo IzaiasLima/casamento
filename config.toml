@@ -42,6 +42,7 @@ series = "series"
     "css/history"]
 
   custom_js = [
+    "/js/custom",
     "/js/menu"]
 
   show_description = true

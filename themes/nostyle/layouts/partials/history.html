@@ -1,25 +1,22 @@
 <section id="history">
-    <div class="section">
-        <div class="content">
-            {{ $res := where .Site.RegularPages "Params.history" true }}
+    <div class="content">
+        {{ $res := where .Site.RegularPages "Params.history" true }}
 
-            {{ range $res }}
+        {{ range $res }}
 
-            <img class="hist-image" src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
-            <img class="mobile-image" src="/posts/images/{{ .Params.image_mobile }}" alt="{{ .Params.image_mobile }}">
+        <img class="hist-img" src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
+        <img class="hist-img-sm" src="/posts/images/{{ .Params.image_mobile }}" alt="{{ .Params.image_mobile }}">
 
-            <div class="history-text">
-                <div class="title">
-                    <h1> {{ .Title }} </h1>
-                </div>
-                <div class="message">
-                    <p>
-                        {{ .Content }}
-                    </p>
-                </div>
+        <div class="history-text">
+            <div class="title">
+                <h1> {{ .Title }} </h1>
             </div>
+            <div class="message">
+                <p>
+                    {{ .Content }}
+                </p>
+            </div>
+            {{ end }}
         </div>
-
-        {{ end }}
     </div>
 </section>

@@ -28,4 +28,4 @@ Hoje, sob as bênçãos do Alto e sob os olhares de suas famílias e anjos, Kaio
 O dragão da força renascida.
 E entre ambos, a promessa gravada:
 
-Uniti Promissione Eterna, Unidos pela Promessa Eterna.
+_Uniti Promissione Eterna_, Unidos pela Promessa Eterna.

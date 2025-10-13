@@ -1,28 +1,15 @@
-// const menu = document.getElementById("menu")
-// const carousel = document.getElementsByTagName("body")[0]
+// Scroll-up Buttom
+function showHideScrollUpBtn(scrPos) {
+    const topBtn = document.getElementById('top-btn');
 
-// window.addEventListener('scroll', function() {
-//     const position = carousel.getBoundingClientRect();
-    
-//     if (position.top < -5 && position.top > -40) {
-//         menu.classList.add("dark-shadow")
-//     }
-//     if (position.top > -4) {
-//         menu.classList.remove("dark-shadow")
-//     }
-// });
+    if (scrPos>0){
+        topBtn.classList.replace('hide', 'show');
+    } else {
+        topBtn.classList.replace('show', 'hide');
+    }
+}
 
-// const input = document.querySelector('input');
-
-// input.addEventListener('focus', function() {
-//     console.log('foco');
-    
-//   input.style='background-color: red !important;';
-// });
-
-// input.addEventListener('blur', function() {
-//     console.log('blur');
-    
-// //   this.classList.remove('focused');
-//   input.style = 'background-color: blue !important;';
-// });
+window.addEventListener('scroll', () => {
+    const scrPos = window.scrollY - window.innerHeight;
+    showHideScrollUpBtn(scrPos)
+})
