@@ -245,7 +245,7 @@ a.button {
     flex-flow: row wrap;
     width: 100%;
     padding: 25px 0px;
-    margin: 0 auto;
+    margin: 40px auto;
     gap: 40px;
 
     &.grid {
@@ -263,7 +263,8 @@ a.button {
 
 @media(width <=768px) {
     .cards.grid {
-        padding: 5vw 18vw;
+        /* padding: 5vw 18vw; */
+        padding: 5vw 2vw;
         display: flex;
         flex-direction: column;
         background-color: transparent;
@@ -308,7 +309,7 @@ a.button {
     background-color: var(--bg-message);
 
     & p {
-        padding: 20px;
+        /* padding: 20px; */
     }
 }
 
@@ -376,11 +377,11 @@ a.button {
 }
 
 #top-btn span.fa {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: left;
-    line-height: 3rem;
+    /* line-height: 3rem; */
     color: var(--border-color);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* FORMS */

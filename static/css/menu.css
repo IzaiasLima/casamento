@@ -46,15 +46,11 @@ nav .logo {
 @media (width <=768px) {
     nav {
         margin-top: 0;
-        /* padding: 15px 20px; */
         padding-top: 15px;
         margin-left: 1.2vw;
-        /* padding-left: 1vw; */
-        /* border-radius: 20px; */
         height: 10vh;
         justify-content: space-between;
         align-items: start;
-        overflow: unset;
     }
 }
 
@@ -102,7 +98,6 @@ nav .logo {
         position: relative;
         top: -130vh;
         width: 65vw !important;
-        height: 60vh !important;
         margin-left: 10vw;
         margin-right: 7vw;
         padding: 25px 10px;
