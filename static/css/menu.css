@@ -46,8 +46,10 @@ nav .logo {
 @media (width <=768px) {
     nav {
         margin-top: 0;
-        padding: 15px 20px;
-        border-radius: 20px;
+        /* padding: 15px 20px; */
+        padding-top: 15px;
+        /* border-radius: 20px; */
+        height: 100vh;
         justify-content: end;
         align-items: start;
     }
@@ -95,18 +97,21 @@ nav .logo {
 @media (width <=768px) {
     .nav-links {
         position: relative;
-        top: -100vh;
-        width: 200px;
-        margin-left: 70px;
-        margin-right: 50px;
-        padding: 25px 0;
+        top: -130vh;
+        /* width: 200px; */
+        width: 60vw;
+        height: 70vh;
+        /* margin-left: 70px; */
+        /* margin-right: 50px; */
+        /* padding: 25px 0; */
+        padding: 25px 10px;
         flex-direction: column;
         align-items: center;
         text-align: center;
         transition: 0.3s;
         background-color: var(--bg-color);
         border: solid var(--border-color) 1px;
-        
+
         box-shadow: 3px 3px 7px 0px hsl(from var(--bg-color) h s l / 55%) !important;
         border-radius: 0px 5px 5px;
 
@@ -123,7 +128,7 @@ nav .logo {
     }
 
     .nav-links.active {
-        transform: translate(-0vw, 90vh);
+        transform: translate(0vw, 120vh);
         transition: transform 0.7s ease-in-out;
     }
 }
