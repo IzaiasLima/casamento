@@ -49,9 +49,10 @@ nav .logo {
         /* padding: 15px 20px; */
         padding-top: 15px;
         /* border-radius: 20px; */
-        height: 100vh;
+        height: 10vh;
         justify-content: end;
         align-items: start;
+        overflow: unset;
     }
 }
 
@@ -100,7 +101,7 @@ nav .logo {
         top: -130vh;
         /* width: 200px; */
         width: 60vw;
-        height: 70vh;
+        height: 60vh;
         /* margin-left: 70px; */
         /* margin-right: 50px; */
         /* padding: 25px 0; */
