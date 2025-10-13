@@ -1,22 +1,25 @@
 :root {
     --bg-color: #121003;
-    --text-color: #fffcea;
-    --border-color: hsl(from var(--bg-color) h s calc(l + 20));
     --bg-menu: hsl(from var(--bg-color) h s calc(l - 47) / 45%);
+    --border-color: hsl(from var(--bg-color) h s calc(l + 20));
+
+    --text-color: #fffcea;
     --text-inverse-color: var(--bg-color);
+    --text-mute-color: hsl(from var(--bg-color) h s calc(l + 30));
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    font-size: 12px;
+    font-family: "Lancelot", serif;
+    font-size: 16px;
     text-decoration: none;
     list-style: none;
     box-shadow: none;
     border: none;
-    overflow-x: hidden;
+    overflow-x: clip;
+    overflow-y: visible;
 }
 
 html {
@@ -209,7 +212,7 @@ h3 {
 
 hr {
     width: 100%;
-    border-bottom: solid var(--base-color) 2px;
+    border-bottom: solid var(--border-color) 2px;
 }
 
 ul {
@@ -221,6 +224,19 @@ a {
     text-decoration: none;
 }
 
+a.button {
+    min-width: 200px;
+    /* height: 150px; */
+    margin-top: 40px;
+    padding: 0.6em 3em;
+    align-self: center;
+    border: none;
+    font-size: clamp(0.5rem, 0.5rem + .8vw, 1.3rem);
+    font-weight: 400;
+    color: var(--text-inverse-color);
+    background-color: rgb(251, 226, 0);
+    border-radius: 50px;
+}
 
 /* CARD  */
 .cards {
@@ -325,11 +341,13 @@ a {
 
     & p {
         padding: 50px 20px;
-        font-size: 1.7rem;
+        font-size: 1rem;
+        color: var(--text-mute-color);
     }
 
     & a {
-        font-size: 1.7rem;
+        font-size: 1rem;
+        color: var(--text-mute-color);
     }
 }
 

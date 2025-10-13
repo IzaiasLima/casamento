@@ -4,7 +4,7 @@ info: true
 active: true
 image: "004-cerimonia1.png"
 image2: "004-cerimonia2.png"
-link: "http://izaias.com.br"
+link: "https://www.youtube.com/@CasamentoLueKaio"
 link_text: "Assistir à Cerimônia"
 weight: 2
 ---

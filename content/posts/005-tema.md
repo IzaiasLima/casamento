@@ -4,7 +4,7 @@ info: true
 active: false
 image: "005-tema1.png"
 image2: "005-tema2.png"
-link: "http://izaias.com.br"
+link: "https://pin.it/257qsYfpK"
 link_text: "Veja Referências"
 weight: 3
 ---

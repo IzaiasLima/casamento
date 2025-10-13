@@ -16,10 +16,9 @@
                     <p>{{ .Content }}</p>
                 </div>
 
-                <form action="">
-                    <input class="start" type="submit" value="{{ .Params.link_text }}">
-                </form>
-
+                <a class="button start" href="{{ .Params.link}}" target="_blank" rel="nofollow noopener noreferrer">
+                    {{ .Params.link_text }}
+                </a>
             </div>
 
             <div class="image">
