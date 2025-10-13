@@ -180,12 +180,12 @@ h3 {
     align-self: center;
     line-height: 105%;
     font-weight: 100;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 h1 {
     font-family: "MonteCarlo", cursive;
-    font-size: clamp(1.5rem, 1rem + 2vw, 3rem);
+    font-size: clamp(1.5rem, 1.3rem + 2vw, 3rem);
 }
 
 h2 {
@@ -245,7 +245,7 @@ a.button {
     flex-flow: row wrap;
     width: 100%;
     padding: 25px 0px;
-    margin: 40px auto;
+    margin: 30px auto;
     gap: 40px;
 
     &.grid {
