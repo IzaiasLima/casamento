@@ -1,7 +1,19 @@
 :root {
     --bg-color: #121003;
+    --mute-color: #B1B021;
+    --accent-color: #FBDA24;
+
     --bg-menu: hsl(from var(--bg-color) h s calc(l - 47) / 45%);
     --border-color: hsl(from var(--bg-color) h s calc(l + 20));
+
+    --button-color: linear-gradient(119deg, rgba(0, 0, 0, 1) 100%, rgba(251, 218, 36, 1) 100%);
+
+    background: #B1B021;
+
+
+
+    background: linear-gradient(313deg, var(--mute-color) 6.82%, var(--accent-color) 87.42%);
+
 
     --text-color: #fffcea;
     --text-inverse-color: var(--bg-color);
@@ -13,7 +25,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Lancelot", serif;
-    font-size: 16px;
+    /* font-size: 16px; */
     text-decoration: none;
     list-style: none;
     box-shadow: none;
@@ -24,6 +36,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: clamp(14px 14vw 24px);
 }
 
 body {
@@ -225,17 +238,23 @@ a {
 }
 
 a.button {
+    position: relative;
     min-width: 200px;
     /* height: 150px; */
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 0.6em 3em;
     align-self: center;
     border: none;
     font-size: clamp(0.5rem, 0.5rem + .8vw, 1.3rem);
     font-weight: 400;
     color: var(--text-inverse-color);
-    background-color: rgb(251, 226, 0);
-    border-radius: 50px;
+    background: linear-gradient(313deg, var(--mute-color) 6.82%, var(--accent-color) 87.42%);
+    border-radius: 7px;
+
+    &.mute {
+        background: var(--mute-color);
+        /* background-color: var(--mute-color); */
+    }
 }
 
 /* CARD  */
@@ -282,34 +301,48 @@ a.button {
 }
 
 .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     min-width: 380px;
     padding: 20px;
     border-radius: 10px;
-}
 
-.card .image {
-    position: static;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
+    & .image {
+        position: static;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
 
-.card .title {
-    position: static;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 15px;
-    background-color: var(--bg-header);
-}
+    & .title {
+        position: static;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 15px;
+        /* background-color: var(--bg-header); */
 
-.card .message {
-    flex: 1;
-    padding: 30px 5px;
-    background-color: var(--bg-message);
+        h2 {
+            font-size: 2em;
+        }
+    }
 
-    & p {
-        /* padding: 20px; */
+    & .message p {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    & .price {
+        font-size: 1.5em;
+        align-self: center;
+        justify-self: center;
+
+        & p {
+            color: var(--text-mute-color);
+            font-weight: 600;
+        }
     }
 }
 
@@ -407,13 +440,18 @@ form {
 
     input[type=submit] {
         min-width: 200px;
-        max-width: fit-content;
-        margin-top: 20px;
         align-self: center;
         border: none;
         color: var(--text-inverse-color);
-        background-color: rgb(251, 226, 0);
-        border-radius: 50px;
+        background: linear-gradient(313deg, var(--mute-color) 6.82%, var(--accent-color) 87.42%);
+        border-radius: 7px;
+
+        font-size: 1.2em;
+        font-weight: 600;
+
+        & .mute {
+            background-color: var(--mute-color);
+        }
     }
 
     & input:focus {

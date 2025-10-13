@@ -5,7 +5,7 @@ nav {
     width: 100%;
     margin: 0 auto;
     margin-top: 10px;
-    padding: 0 15px;
+    padding: 0 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -96,7 +96,7 @@ nav .logo {
 @media (width <=768px) {
     .nav-links {
         position: relative;
-        top: -130vh;
+        top: -135vh;
         width: 65vw !important;
         margin-left: 10vw;
         margin-right: 7vw;

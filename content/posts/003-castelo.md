@@ -2,8 +2,8 @@
 title: "O Castelo"
 info: true
 active: true
-image: "castelo1.png"
-image2: "castelo2.png"
+image: "003-castelo1.png"
+image2: "003-castelo2.png"
 link: "https://saintandrews.com.br"
 link_text: "Conheça o Castelo"
 weight: 1

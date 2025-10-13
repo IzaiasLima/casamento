@@ -2,8 +2,8 @@
 title: "A Cerimônia"
 info: true
 active: true
-image: "004-cerimonia1.png"
-image2: "004-cerimonia2.png"
+image: "003-cerimonia1.png"
+image2: "003-cerimonia2.png"
 link: "https://www.youtube.com/@CasamentoLueKaio"
 link_text: "Assistir à Cerimônia"
 weight: 2

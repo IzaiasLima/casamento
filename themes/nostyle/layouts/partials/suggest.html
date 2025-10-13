@@ -20,38 +20,25 @@
 
             {{ range $res }}
 
-            <div>
-                <div class="card inverse">
-                    <div class="image">
-                        <a href="{{ .RelPermalink }}">
-                            <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
-                        </a>
-                    </div>
-
-                    <div class="title">
-                        <h2 class="h2">
-                            <a class="text-decoration-none" href="{{ .RelPermalink }}">
-                                {{ .Title }}
-                            </a>
-                        </h2>
-                    </div>
-
-                    <div class="price">
-                        <ul class="card-price">
-                            {{if .Params.price }}
-                            <li class="text-warning text-right">R$ {{ .Params.price }}</li>
-                            {{ end }}
-                        </ul>
-                    </div>
-
-                    <div class="message">
-                        <p>{{ .Params.summary}}</p>
-                    </div>
+            <div class="card">
+                <div class="image">
+                    <a href="{{ .RelPermalink }}">
+                        <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
+                    </a>
                 </div>
-                <form action="">
-                    <input type="submit" value="Presentear">
-                </form>
+
+                <div class="title">
+                    <h2 class="h2"> {{ .Title }} </h2>
+                </div>
+
+                <div class="message"> {{ .Content }} </div>
+
+                <div class="price">
+                    <p class="text-warning text-right">R$ {{ .Params.price }}</p>
+                </div>
+                <a class="button mute" href="#suggest">Presentear </a>
             </div>
+
             {{ end }}
 
         </div>
