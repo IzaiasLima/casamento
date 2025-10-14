@@ -39,6 +39,8 @@ series = "series"
     "css/base", 
     "css/menu",
     "css/hero",
+    "/css/info",
+    "/css/suggest",
     "css/history"]
 
   custom_js = [

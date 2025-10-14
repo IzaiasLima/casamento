@@ -35,12 +35,31 @@
         justify-content: start;
     }
 
-    h1 {
-        font-size: clamp(3rem, 6vw + 1.5rem, 9rem);
+    & h1 {
+        /* font-size: clamp(3rem, 6vw + 1.5rem, 9rem); */
+        font-size: 8rem;
     }
 
-    h2 {
-        font-size: clamp(1rem, 1.5vw + 0.7rem, 4rem);
-        line-height: 90%;
+    & h2 {
+        font-size: 2.5rem;
+        /* font-size: clamp(1rem, 1.5vw + 0.7rem, 4rem); */
+        /* line-height: 90%; */
+    }
+}
+
+@media (width <=768px) {
+    #hero-container {
+        & h1 {
+            font-size: 3.2rem !important;
+        }
+
+        & h2 {
+            font-size: 1rem !important;
+        }
+
+        & .cover {
+            padding-top: 28%;
+        }
+
     }
 }

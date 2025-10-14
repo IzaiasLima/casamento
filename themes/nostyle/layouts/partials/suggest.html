@@ -1,46 +1,43 @@
-<style>
-    #suggest {
-        margin: 100px 0;
-    }
-</style>
-
 <section id="suggest">
-    <div class="container flex col center">
-        <div>
-            <h1>Lista sugestões de Presentes</h1>
-            <p>
-                Preparamos uma pequena lista de sugestões de presentes, para facilitar a sua
-                vida, caso você queira nos presentear algo.
-            </p>
-        </div>
+    <div class="container col center-itens">
+        <h1 class="suggest">Lista sugestões de Presentes</h1>
+        <p class="center">
+            Preparamos uma pequena lista de sugestões de presentes, para facilitar a sua
+            vida, caso você queira nos presentear algo.
+        </p>
+    </div>
 
-        <div class="cards grid">
+    <div class="cards suggest">
 
-            {{ $res := where .Site.RegularPages "Params.suggest" true }}
+        {{ $res := where .Site.RegularPages "Params.suggest" true }}
 
-            {{ range $res }}
+        {{ range $res }}
 
-            <div class="card">
-                <div class="image">
-                    <a href="{{ .RelPermalink }}">
-                        <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
-                    </a>
-                </div>
-
-                <div class="title">
-                    <h2 class="h2"> {{ .Title }} </h2>
-                </div>
-
-                <div class="message"> {{ .Content }} </div>
-
-                <div class="price">
-                    <p class="text-warning text-right">R$ {{ .Params.price }}</p>
-                </div>
-                <a class="button mute" href="#suggest">Presentear </a>
+        <div class="card suggest">
+            <div class="image">
+                <a href="{{ .RelPermalink }}">
+                    <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
+                </a>
             </div>
 
-            {{ end }}
+            <div class="title">
+                <h2 class="h2"> {{ .Title }} </h2>
+            </div>
 
+            <div class="message">
+                <p class="center">{{ .Content }}</p>
+            </div>
+
+            <div class="price">
+                <p class="text-warning text-right">R$ {{ .Params.price }}</p>
+            </div>
+            <a class="button mute lg" href="#suggest">Presentear </a>
         </div>
+
+        <a class="button mute sm" href="#suggest">Presentear </a>
+
+        {{ end }}
+
+    </div>
     </div>
 </section>
