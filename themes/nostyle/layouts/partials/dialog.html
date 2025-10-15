@@ -1,96 +1,5 @@
-<style>
-  #dialog {
-    display: none;
-
-    /* } */
-
-    /* .modal-overlay { */
-    position: fixed;
-
-    &.active {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      /* padding: 20vw; */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: transparent;
-    }
-  }
-
-  article {
-    /* padding: 40px; */
-    max-width: 80vw;
-    /* max-height: 80vh; */
-
-    padding: 20px;
-    /* justify-self: center; */
-    /* align-self: center; */
-    /* width: clamp(500px, 70vw, 1000px); */
-    background-color: var(--bg-color);
-    border-radius: 10px;
-    z-index: 1000;
-
-    & .form-control-group {
-      display: flex;
-      justify-content: space-between;
-
-      & div {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-
-    & button.close {
-      display: flex;
-      justify-content: end;
-      width: 100%;
-      color: var(--text-color);
-      background-color: var(--bg-color);
-    }
-
-    & .show {
-      display: block;
-    }
-
-    & h1 {
-      font-size: 2.3rem;
-      padding: 0 !important;
-    }
-
-    & p {
-      padding: 0 12%;
-      margin-top: 0.7rem;
-      font-size: 1rem;
-      font-weight: 400;
-      color: var(--text-color);
-      width: 100%;
-      text-align: center;
-    }
-
-    .gift {
-      padding: 0 3vw;
-    }
-
-    & .message h2 {
-      padding-top: 20px;
-      font-family: "Lancelot", serif;
-      font-size: 1.5rem;
-      color: var(--mute-color);
-    }
-
-    & input[type="submit"] {
-      margin-bottom: 0.5em;
-      cursor: pointer;
-    }
-  }
-</style>
-
-<dialog id="dialog" >
-  <article class="shadow">
+<dialog id="dialog" aria-modal="true">
+  <article>
     <header>
       <button class="close" onclick="dialogClose()" aria-label="Close" rel="prev">
         <span class="fa fa-close"></span>
@@ -102,7 +11,7 @@
     {{ range $res }}
 
     <div class="title">
-      <h1> {{ .Title }} </h1>
+      <h2> {{ .Title }} </h2>
     </div>
     <div class="message">
       <h2 id="item">Nome do item</h2>
@@ -121,23 +30,23 @@
               <input id="mp_link" name="mp_link" type="hidden">
 
               <div>
-                <label for="user_name">Nome</label>
+                <label>Nome</label>
                 <input type="text" placeholder="Informe seu nome aqui" name="user_name" class="form-control" required>
               </div>
 
               <div>
-                <label for="user_tel">Seu telefone</label>
+                <label>Seu telefone</label>
                 <input type="tel" placeholder="Informe seu telefone de contato" name="user_tel" class="form-control"
                   required>
               </div>
 
               <div>
-                <label for="user_email">Seu email (opcional) </label>
+                <label>Seu email (opcional) </label>
                 <input type="email" placeholder="Informe seu e-mail" name="user_email" class="form-control">
               </div>
             </div>
 
-            <label for="message">Mensagem</label>
+            <label>Mensagem</label>
             <textarea name="message" class="form-control" rows="3" placeholder="Envie uma mensagem para os noivos"
               required></textarea>
 

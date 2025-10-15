@@ -1,5 +1,6 @@
 ---
 title: "Roupa de cama"
+gift: true
 suggest: true
 price: 65,00
 image: "004-cama.webp"

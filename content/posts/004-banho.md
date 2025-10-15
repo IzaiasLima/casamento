@@ -1,6 +1,6 @@
 ---
 title: "Toalhas de banho"
-suggest: true
+gift: true
 price: 95,00
 image: "004-toalhas.webp"
 ---

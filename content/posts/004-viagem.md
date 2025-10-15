@@ -1,8 +1,11 @@
 ---
 title: "Ajudar na lua-de-mel do casal"
+gift: true
 suggest: true
-price: 195,00
+price: 445,00
 image: "004-viagem.jpg"
+link: "https://mpago.la/2sFQKXK"
+weight: 1
 ---
 
 Ajudar o casal a realizar o sonho de viajar na sua lua-de-mel.

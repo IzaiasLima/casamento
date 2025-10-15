@@ -1,0 +1,94 @@
+#dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+
+    &.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+}
+
+article {
+    max-width: 90vw;
+    max-height: 85vh;
+    padding: 15px;
+    border: solid var(--border-color) 1px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px 0px hsl(from var(--bg-color) h s l / 55%);
+    background-color: var(--bg-color);
+    overflow-y: auto;
+    scrollbar-width: none;
+    z-index: 1000;
+
+    & .form-control-group {
+        display: flex;
+        justify-content: space-between;
+
+        & div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media (width <=768px) {
+        max-width: 95vw;
+
+        & .form-control-group {
+            display: block;
+        }
+    }
+
+    & .title {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    & button.close {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+    }
+
+    & .show {
+        display: block;
+    }
+
+    & h1 {
+        font-size: 2.3rem;
+        padding: 0 !important;
+    }
+
+    & p {
+        padding: 0 8%;
+        margin-top: 0.7rem;
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--text-color);
+        width: 100%;
+        text-align: center;
+    }
+
+    .gift {
+        padding: 0 3vw;
+    }
+
+    & .message h2 {
+        padding-top: 20px;
+        font-family: "Lancelot", serif;
+        font-size: 1.5rem;
+        color: var(--mute-color);
+    }
+
+    & input[type="submit"] {
+        margin: 0.5em;
+    }
+}

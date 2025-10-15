@@ -5,26 +5,30 @@ nav {
     width: 100%;
     margin: 0 auto;
     margin-top: 10px;
-    padding: 0 25px;
+    padding: 10px 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: transparent;
     z-index: 1000;
-}
 
-nav .logo {
-    display: flex;
-    flex: 2;
-    padding: 10px 0;
+    & .logo {
+        display: flex;
+        flex: 2;
+        align-items: center;
+        justify-content: start;
+        gap: 0;
 
-    & img {
-        width: 30%;
-    }
+        & img {
+            width: 50px;
+            height: 50px;
+        }
 
-    & h3 {
-        text-wrap-mode: nowrap;
+        & h3 {
+            font-family: "MonteCarlo", cursive;
+            text-wrap-mode: nowrap;
+        }
     }
 }
 
@@ -42,12 +46,10 @@ nav .logo {
     }
 }
 
-
 @media (width <=768px) {
     nav {
         margin-top: 0;
         padding-top: 15px;
-        /* margin-left: 1.2vw; */
         height: 10vh;
         justify-content: space-between;
         align-items: start;
@@ -74,23 +76,11 @@ nav .logo {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    padding: 0px 90px;
+    padding: 10px 90px;
     border-radius: 50px;
     background-color: var(--bg-menu);
     gap: 2rem;
     z-index: 1000;
-
-    & a {
-        display: inline-flex;
-        flex-wrap: nowrap;
-        /* font-size: clamp(0.5rem, 0.7vw + 0.5rem, 1.2rem); */
-        color: var(--text-color);
-        gap: 10px;
-    }
-
-    & a:hover {
-        color: var(--primary-color);
-    }
 }
 
 @media (width <=768px) {
@@ -105,7 +95,7 @@ nav .logo {
         transition: 0.3s;
         background-color: var(--bg-color);
         border: solid var(--border-color) 1px;
-        box-shadow: 3px 3px 7px 0px hsl(from var(--bg-color) h s l / 55%) !important;
+        box-shadow: 3px 3px 7px 0px hsl(from var(--bg-color) h s l / 55%);
         border-radius: 0px 5px 5px;
         gap: 0;
         z-index: 2000;
@@ -125,27 +115,6 @@ nav .logo {
     }
 }
 
-.logo {
-    display: flex;
-    flex: 2;
-    align-items: center;
-    /* align-content: center; */
-    /* justify-items: center; */
-    justify-content: start;
-
-    & img {
-        width: 50px;
-        height: 50px;
-    }
-
-    h3 {
-        display: flex;
-        margin: 0;
-        align-items: center;
-        font-size: 1.4rem;
-        /* font-size: clamp(0.7rem, 1vw + 0.7rem, 2.3rem); */
-    }
-}
 
 @media (width <=768px) {
     .logo {
@@ -160,10 +129,6 @@ nav .logo {
 @media (width <=768px) {
     .logo-mobile {
         display: static;
-
-        h3 {
-            /* font-size: clamp(0.7rem, 1vw + 1rem, 2.3rem); */
-        }
 
         & a {
             display: flex;

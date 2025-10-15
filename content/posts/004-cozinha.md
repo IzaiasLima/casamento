@@ -1,6 +1,6 @@
 ---
 title: "Utensilhos de cozinha"
-suggest: true
+gift: true
 price: 698,00
 image: "004-microondas.jpg"
 ---

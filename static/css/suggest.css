@@ -1,15 +1,21 @@
 #suggest {
     margin: 100px 0;
+
+
+    & .container {
+        padding: 0 5px;
+    }
+
+    & .close {
+        padding: 20px;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+    }
 }
 
-#suggest .container {
-    /* width: 100vw; */
-    padding: 0 5px;
-}
-
-h1.suggest {
+/* h1.suggest {
     margin-bottom: 10px;
-}
+} */
 
 .cards.suggest {
     display: grid;
@@ -26,17 +32,14 @@ h1.suggest {
     }
 
     & a.button {
-        /* width: unset; */
         align-self: center;
     }
 
-    /* & a.button.sm {
-        display: none;
+    & .message {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
     }
-
-    & a.button.lg {
-        display: block;
-    } */
 }
 
 @media(width <=768px) {

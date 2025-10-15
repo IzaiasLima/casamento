@@ -42,6 +42,7 @@ series = "series"
     "/css/info",
     "/css/suggest",
     "/css/forms",
+    "/css/dialog",
     "css/history"]
 
   custom_js = [
