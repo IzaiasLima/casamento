@@ -10,24 +10,24 @@ enableInlineShortcodes = true
 [menu]
 
 [[menu.main]]
-    name = "Início"
-    url = "/"
+    name = "Nossa História"
+    url = "#history"
     weight = 1
 
 [[menu.main]]
+    name = "Castelo"
+    url = "#info"
+    weight = 2
+    
+[[menu.main]]
     name = "Lista de Presentes"
-    url = "#presentes"
-    weight = 10
+    url = "#suggest"
+    weight = 4
 
 [[menu.main]]
-    name = "Sobre nós"
-    url = "/about/"
-    weight = 20
-
-[[menu.main]]
-    name = "Contato"
-    url = "#contact"
-    weight = 30
+    name = "Asista On-line"
+    url = "#video"
+    weight = 5
 
 [taxonomies]
 category = "categories"

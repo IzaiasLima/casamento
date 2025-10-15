@@ -1,6 +1,5 @@
 #suggest {
-    margin: 100px 0;
-
+    margin: 20px 0;
 
     & .container {
         padding: 0 5px;
@@ -11,11 +10,11 @@
         color: var(--text-color);
         background-color: var(--bg-color);
     }
-}
 
-/* h1.suggest {
-    margin-bottom: 10px;
-} */
+    & span.fa {
+        font-size: 1.2rem;
+    }
+}
 
 .cards.suggest {
     display: grid;
@@ -55,16 +54,7 @@
             justify-self: center;
         }
 
-        /* & a.button.sm {
-            display: block;
-        }
-
-        & a.button.lg {
-            display: none;
-        } */
-
         a.button {
-            /* width: unset; */
             justify-self: center !important;
             justify-items: center;
             align-self: center;

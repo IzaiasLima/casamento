@@ -3,10 +3,18 @@
 
 {{- partial "head.html" . -}}
 
-<body>
+<body id="home">
     <div class="content">
         {{- partial "post_list.html" . -}}
     </div>
+
+    <a id="top-btn" class="hide" href="#home"><span class="fa fa-circle-up"></span></a>
+
+   {{ range .Site.Params.custom_js -}}
+   <script type="text/javascript" src="{{ . | absURL }}.js"></script>
+   {{- end }}
+
+
 </body>
 
 </html>

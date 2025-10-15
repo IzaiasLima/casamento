@@ -47,7 +47,7 @@ body {
 }
 
 img {
-    overflow: unset;
+    border-radius: 20px;
 }
 
 /* CONTAINER */
@@ -298,6 +298,13 @@ a {
             font-weight: 600;
         }
     }
+}
+
+#video {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 /* FOOTER */
