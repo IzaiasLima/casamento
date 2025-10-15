@@ -5,10 +5,13 @@
 
     --bg-menu: hsl(from var(--bg-color) h s calc(l - 47) / 45%);
     --border-color: hsl(from var(--bg-color) h s calc(l + 20));
+    --btn-mute: hsl(from var(--mute-color) h s calc(l + 20));
 
     --text-color: #fffcea;
     --text-inverse-color: var(--bg-color);
     --text-mute-color: hsl(from var(--bg-color) h s calc(l + 30));
+
+    --shadow-color: hsl(from var(--text-color) h s calc(l - 15) / 60%);
 }
 
 * {
@@ -16,7 +19,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Lancelot", serif;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     list-style: none;
     box-shadow: none;
@@ -25,9 +28,10 @@
     overflow-y: visible;
 }
 
-@media (width <=768) {
+@media (width <=768px) {
     * {
         scrollbar-width: none;
+        /* font-size: 1.2rem; */
     }
 }
 
@@ -49,7 +53,7 @@ img {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    padding: 0 20px;
+    padding: unset;
     background-color: var(--bg-color);
 
     & img {
@@ -83,17 +87,17 @@ img {
 }
 
 .shadow {
-    box-shadow: 1px 7px 25px 1px rgba(255, 255, 255, 0.6);
+    box-shadow: 1px 7px 25px 1px var(--shadow-color);
 }
 
 .small.shadow,
 .small .shadow {
-    box-shadow: 3px 3px 13px 0px rgba(0, 0, 0, 0.95) !important;
+    box-shadow: 1px 7px 25px 1px var(--shadow-color);
 }
 
 .inverse.shadow,
 .inverse .shadow {
-    box-shadow: 1px 7px 25px 1px rgba(0, 0, 0, 0.95);
+    box-shadow: 1px 7px 25px 1px calc(--bg-color);
 }
 
 /* FLEXBOX */
@@ -185,6 +189,7 @@ img {
 h1,
 h2,
 h3 {
+    font-family: "MonteCarlo", cursive;
     color: var(--text-color);
     text-align: center;
     justify-self: center;
@@ -193,17 +198,30 @@ h3 {
 }
 
 h1 {
-    font-family: "MonteCarlo", cursive;
-    font-size: 2rem;
-    ;
+    font-size: 3rem;
 }
 
 h2 {
-    font-family: "Lancelot", serif;
+    font-size: 1.3rem;
 }
 
 h3 {
-    font-family: "MonteCarlo", cursive;
+    font-size: 1.1rem;
+}
+
+@media(width <=768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
 }
 
 .inverse h1,
@@ -236,9 +254,10 @@ a.button {
     color: var(--text-inverse-color);
     background: linear-gradient(313deg, var(--mute-color) 6.82%, var(--accent-color) 87.42%);
     border-radius: 7px;
+    cursor: pointer;
 
     &.mute {
-        background: var(--mute-color);
+        background: var(--btn-mute);
     }
 }
 
@@ -286,9 +305,9 @@ a.button {
         width: 100%;
         padding: 30px 15px;
 
-        h2 {
+        /* h2 {
             font-size: 2em;
-        }
+        } */
     }
 
     & .message p {
@@ -380,57 +399,45 @@ a.button {
     /* overflow: hidden; */
 }
 
-/* FORMS */
-form {
+/* start toast */
+
+#toast {
+    visibility: hidden;
     display: flex;
-    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
 
-    & label {
-        font-size: 0.9em;
-        color: var(--secondary-color);
-    }
+    top: calc(50vh - 100px);
 
-    & input {
-        height: 2.5rem;
-        padding: 0 10px;
-        outline: none;
-        border-bottom: solid var(--text-inverse-color) 2px;
-        margin-bottom: 2em;
-        color: var(--text-color);
-        caret-color: var(--base-color);
-        background-color: var(--bg-input);
-    }
 
-    input[type=submit] {
-        min-width: 200px;
-        align-self: center;
-        border: none;
-        color: var(--text-inverse-color);
-        background: linear-gradient(313deg, var(--mute-color) 6.82%, var(--accent-color) 87.42%);
-        border-radius: 7px;
+    width: 94vw;
+    left: 3vw;
 
-        font-size: 1.2em;
-        font-weight: 600;
+    padding: 20px;
 
-        & .mute {
-            background-color: var(--mute-color);
-        }
-    }
+    text-align: center;
+    font-size: 2rem;
+    color: var(--text-color);
+    box-shadow: 1px 7px 25px 1px var(--shadow-color);
+    border-radius: 5px;
+}
 
-    & input:focus {
-        border-bottom: solid var(--base-color) 3px;
-    }
+#toast.show {
+    visibility: visible;
+}
 
-    & textarea {
-        padding: 10px;
-        color: var(--text-color);
-        background-color: var(--bg-input);
-        caret-color: var(--base-color);
-    }
+#toast.ok {
+    background-color: unset;
+}
 
-    & textarea:focus {
-        outline: none;
-        border-left: solid var(--base-color) 3px;
-        background-color: var(--bg-input-focus);
+#toast.err {
+    background-color: #ee535d;
+}
+
+@media (width <=768) {
+    #toast {
+        left: calc(30vw);
+        width: calc(40vw);
     }
 }

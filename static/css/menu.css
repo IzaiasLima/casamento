@@ -83,7 +83,7 @@ nav .logo {
     & a {
         display: inline-flex;
         flex-wrap: nowrap;
-        font-size: clamp(0.5rem, 0.7vw + 0.5rem, 1.2rem);
+        /* font-size: clamp(0.5rem, 0.7vw + 0.5rem, 1.2rem); */
         color: var(--text-color);
         gap: 10px;
     }
@@ -120,7 +120,7 @@ nav .logo {
     }
 
     .nav-links.active {
-        transform: translate(0vw, 120vh);
+        transform: translate(0vw, 130vh);
         transition: transform 0.7s ease-in-out;
     }
 }
@@ -129,6 +129,9 @@ nav .logo {
     display: flex;
     flex: 2;
     align-items: center;
+    /* align-content: center; */
+    /* justify-items: center; */
+    justify-content: start;
 
     & img {
         width: 50px;
@@ -136,7 +139,11 @@ nav .logo {
     }
 
     h3 {
-        font-size: clamp(0.7rem, 1vw + 0.7rem, 2.3rem);
+        display: flex;
+        margin: 0;
+        align-items: center;
+        font-size: 1.4rem;
+        /* font-size: clamp(0.7rem, 1vw + 0.7rem, 2.3rem); */
     }
 }
 
@@ -155,7 +162,7 @@ nav .logo {
         display: static;
 
         h3 {
-            font-size: clamp(0.7rem, 1vw + 1rem, 2.3rem);
+            /* font-size: clamp(0.7rem, 1vw + 1rem, 2.3rem); */
         }
 
         & a {

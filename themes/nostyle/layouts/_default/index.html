@@ -13,10 +13,15 @@
 
    <div class="content">
       {{- partial "suggest.html" . -}}
+      {{- partial "dialog.html" . -}}
       {{- partial "footer.html" . -}}
    </div>
 
    <a id="top-btn" class="hide" href="#home"><span class="fa fa-circle-up"></span></a>
+
+   <div id="toast" class="">
+      <!-- Exibir mensagem -->
+   </div>
 
    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
       type = "text/javascript"

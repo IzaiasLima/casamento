@@ -41,11 +41,13 @@ series = "series"
     "css/hero",
     "/css/info",
     "/css/suggest",
+    "/css/forms",
     "css/history"]
 
   custom_js = [
     "/js/custom",
-    "/js/menu"]
+    "/js/menu",
+    "/js/email"]
 
   show_description = true
   slogan = "Um espaço de Criação e Inspiração"

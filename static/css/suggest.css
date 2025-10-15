@@ -2,6 +2,11 @@
     margin: 100px 0;
 }
 
+#suggest .container {
+    /* width: 100vw; */
+    padding: 0 5px;
+}
+
 h1.suggest {
     margin-bottom: 10px;
 }
@@ -14,9 +19,6 @@ h1.suggest {
 
     & .image {
         width: 100%;
-        width: 100%;
-        width: 100%;
-        aspect-ratio: 1/1;
     }
 
     & .title {
@@ -28,13 +30,13 @@ h1.suggest {
         align-self: center;
     }
 
-    & a.button.sm {
+    /* & a.button.sm {
         display: none;
     }
 
     & a.button.lg {
         display: block;
-    }
+    } */
 }
 
 @media(width <=768px) {
@@ -50,13 +52,13 @@ h1.suggest {
             justify-self: center;
         }
 
-        & a.button.sm {
+        /* & a.button.sm {
             display: block;
         }
 
         & a.button.lg {
             display: none;
-        }
+        } */
 
         a.button {
             /* width: unset; */

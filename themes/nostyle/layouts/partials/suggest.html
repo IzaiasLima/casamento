@@ -1,6 +1,6 @@
 <section id="suggest">
     <div class="container col center-itens">
-        <h1 class="suggest">Lista sugestões de Presentes</h1>
+        <h1 class="suggest">Sugestões de Presentes</h1>
         <p class="center">
             Preparamos uma pequena lista de sugestões de presentes, para facilitar a sua
             vida, caso você queira nos presentear algo.
@@ -15,9 +15,7 @@
 
         <div class="card suggest">
             <div class="image">
-                <a href="{{ .RelPermalink }}">
-                    <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
-                </a>
+                <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
             </div>
 
             <div class="title">
@@ -31,13 +29,16 @@
             <div class="price">
                 <p class="text-warning text-right">R$ {{ .Params.price }}</p>
             </div>
-            <a class="button mute lg" href="#suggest">Presentear </a>
+            <!-- <a class="button mute lg" href="#suggest">Presentear </a> -->
+
+            {{ if .Params.link }}
+            <a class="button mute" onclick="dialogShow('{{ .Title }}', '{{ .Params.link }}')">Presentear</a>
+            {{ end }}
+
         </div>
 
-        <a class="button mute sm" href="#suggest">Presentear </a>
+        <!-- <a class="button mute" onclick="dialogShow('{{ .Title }}', '{{ .Params.link }}')">Presentear </a> -->
 
         {{ end }}
-
-    </div>
     </div>
 </section>

@@ -10,15 +10,34 @@ window.onload = function () {
     if (isNotNull(frmEmail)) {
         frmEmail.addEventListener('submit', function (event) {
             event.preventDefault();
+            
 
+            const mpLink = document.getElementById('mp-lik');
 
-            emailjs.sendForm('service_izaias_com_br', 'template_izaias_com_br', '#contact-form').then(
+            // emailjs.sendForm('service_izaias_com_br', 'template_izaias_com_br', '#contact-form').then(
+            emailjs.sendForm('service_casamento_', 'template_casamento_', '#contact-form').then(
                 (response) => {
                     frmEmail.reset();
-                    showToast("Obrigado! Retornaremos seu contato logo que for possível.");
+                    dialogClose();
+
+                    // showToast("Obrigado! Sua gentileza será parte das nossas boas lembranças.");
                     console.log('EMAIL SUCCESS!');
+
+                    // chamada do Mercado Pago
+                    if (isNotNull(mpLink)) {
+                        console.log(mpLink);
+                        window.open(mpLink, '_blank')
+                    }
                 },
+
                 (error) => {
+                    dialogClose();
+
+                    if (isNotNull(mpLink)) {
+                        console.log(mpLink);
+                        window.open(mpLink, '_blank')
+                    }
+
                     const msg = "Desculpe, não foi possível enviar sua mensagem. Tente novamente mais tarde.";
                     showToast(msg, true);
                     console.log('EMAIL SENDER FAILED: ', error);
@@ -44,7 +63,7 @@ function showToast(msg, err = false) {
         }
 
         toast.innerHTML = msg;
-        toast.classList.add('show', 'animate__fadeInUp');
-        setTimeout(function () { toast.classList.remove('show', 'ok', 'err', 'animate__fadeInUp') }, len * 150);
+        toast.classList.add('show');
+        setTimeout(function () { toast.classList.remove('show', 'ok', 'err') }, len * 150);
     }
 }

@@ -1,5 +1,5 @@
 ---
-title: "Lua-de-mel do Casal"
+title: "Ajudar na lua-de-mel do casal"
 suggest: true
 price: 195,00
 image: "004-viagem.jpg"

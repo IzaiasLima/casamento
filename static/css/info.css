@@ -1,6 +1,14 @@
+.content.info {
+    position: relative;
+    padding: 0 1vw;
+}
+
 .cards.info {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    /* justify-content: end; */
+    /* align-items: center; */
+    /* justify-items: end; */
     text-align: left;
     padding: 25px 0px;
 
@@ -11,13 +19,8 @@
     & a.button {
         width: fit-content;
         justify-self: start;
+
     }
-/* 
-    & div.card a.button {
-        width: fit-content;
-        justify-self: center !important;
-        justify-items: center;
-    } */
 }
 
 @media(width <=768px) {
@@ -38,6 +41,8 @@
     }
 
     a.button {
+        margin-top: 0;
+        margin-bottom: 20px;
         width: unset;
         justify-self: center !important;
         justify-items: center;

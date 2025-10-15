@@ -23,29 +23,36 @@
 .history-text {
     position: static;
     top: 0;
-    margin: 15px 10vw;
+    margin: 15px 13vw;
 
     & .title {
         position: relative;
-        padding-bottom: 3rem;
+        padding-bottom: 1.5rem;
     }
 
     & .message {
         position: relative;
         margin-left: 2vw;
+
         & p {
-            padding: 0.6em 7em;
-            font-size: clamp(0.6rem, 0.3rem + 0.9vw, 1.5rem);
+            padding: 0.4em 0;
+            font-size: 1.2rem;
+            /* font-size: clamp(0.6rem, 0.3rem + 0.9vw, 1.5rem); */
             text-align: center;
-            line-height: 1.5em;
+            /* line-height: 1.5em; */
         }
     }
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
     .history-text {
         & .message p {
             padding: 0.6em 1em;
+            font-size: 1rem;
+        }
+
+        & .title {
+            padding-bottom: 0.5em;
         }
     }
 }
