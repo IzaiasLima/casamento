@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 1.6fr 1fr 1fr;
     /* justify-content: end; */
-    /* align-items: center; */
+    align-items: center;
     /* justify-items: end; */
     text-align: left;
     padding: 25px 0px;

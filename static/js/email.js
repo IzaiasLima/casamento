@@ -14,8 +14,8 @@ window.onload = function () {
 
             const mpLink = document.getElementById('mp_link').value;
 
-            emailjs.sendForm('service_izaias_com_br', 'template_izaias_com_br', '#contact-form').then(
-            // emailjs.sendForm('service_casament', 'template_casamento', '#contact-form').then(
+            // emailjs.sendForm('service_izaias_com_br', 'template_izaias_com_br', '#contact-form').then(
+            emailjs.sendForm('service_casamento', 'template_casamento', '#contact-form').then(
                 (response) => {
                     frmEmail.reset();
                     dialogClose();

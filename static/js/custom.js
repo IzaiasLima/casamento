@@ -1,5 +1,5 @@
 // Scroll-up Buttom
-function showHideScrollUpBtn(scrPos) {
+function showHideTopBtn(scrPos) {
     const topBtn = document.getElementById('top-btn');
 
     if (scrPos > 0) {
@@ -11,7 +11,7 @@ function showHideScrollUpBtn(scrPos) {
 
 window.addEventListener('scroll', () => {
     const scrPos = window.scrollY - window.innerHeight;
-    showHideScrollUpBtn(scrPos)
+    showHideTopBtn(scrPos)
 })
 
 

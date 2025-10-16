@@ -1,11 +1,9 @@
 <section id="history">
-    <div class="content">
+    <div class="content history">
+
         {{ $res := where .Site.RegularPages "Params.history" true }}
 
         {{ range $res }}
-
-        <img class="hist-img" src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
-        <img class="hist-img-sm" src="/posts/images/{{ .Params.image_mobile }}" alt="{{ .Params.image_mobile }}">
 
         <div class="history-text">
             <div class="title">
@@ -16,7 +14,7 @@
                     {{ .Content }}
                 </p>
             </div>
-            {{ end }}
         </div>
+        {{ end }}
     </div>
 </section>

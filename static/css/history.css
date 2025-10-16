@@ -1,53 +1,51 @@
-.hist-img {
-    display: none !important;
-}
+#history {
+    background-image: url('/images/dragao-raposa.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 63%;
 
-.hist-img-sm {
-    display: block !important;
-    position: absolute;
-    left: 0;
-}
-
-@media (width >=768px) {
-    .hist-img {
-        display: block !important;
-        position: absolute;
-        left: 0;
+    & .content {
+        background-color: transparent;
     }
 
-    .hist-img-sm {
-        display: none !important;
+    @media (width <= 768px){
+         background-size: 100%;
     }
 }
 
 .history-text {
     position: static;
     top: 0;
-    margin: 15px 13vw;
+    margin: 10px 10vw;
+    padding-left: 3em;
+    background-color: transparent;
 
     & .title {
         position: relative;
+        top: 0;
         padding-bottom: 1.5rem;
     }
 
     & .message {
         position: relative;
-        margin-left: 2vw;
 
         & p {
-            padding: 0.4em 0;
+            padding: 0 7em;
             font-size: 1.2rem;
-            /* font-size: clamp(0.6rem, 0.3rem + 0.9vw, 1.5rem); */
             text-align: center;
-            /* line-height: 1.5em; */
         }
     }
 }
 
 @media (width <=768px) {
     .history-text {
+        margin: 10px 13vw;
+        padding-left: 1em;
+
         & .message p {
-            padding: 0.6em 1em;
+            /* padding: 0.6em 1em; */
+            padding: 0;
             font-size: 1rem;
         }
 

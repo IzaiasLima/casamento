@@ -79,6 +79,7 @@ article {
 
     .gift {
         padding: 0 3vw;
+        padding-top: 1em;
     }
 
     & .message h2 {

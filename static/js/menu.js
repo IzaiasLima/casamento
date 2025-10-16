@@ -1,5 +1,4 @@
 const btn = document.querySelector('.bars');
-// const nav = document.querySelector('nav');
 const links = document.querySelector('.nav-links');
 const cover = document.querySelector('.cover');
 const history = document.querySelector('.history-text');
@@ -16,7 +15,6 @@ function openMenu() {
 }
 
 btn.addEventListener('click', () => openMenu());
-// nav.addEventListener('click', () => closeMenu());
 cover.addEventListener('click', () => closeMenu());
 history.addEventListener('click', () => closeMenu());
 
