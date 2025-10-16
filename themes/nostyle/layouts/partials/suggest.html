@@ -32,11 +32,13 @@
 
             {{ if .Params.link }}
             <a class="button mute" onclick="dialogShow('{{ .Title }}', '{{ .Params.link }}')">Presentear</a>
+            {{ else }}
+            <a class="button mute disabled">Esgotado</a>
             {{ end }}
         </div>
         {{ end }}
     </div>
 
-    <a class="button" href="/posts" >Ver mais sugestões de presentes</a>
+    <a class="button" href="/posts" target="_self">Ver mais sugestões de presentes</a>
     <hr>
 </section>

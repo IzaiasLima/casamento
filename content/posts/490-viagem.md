@@ -3,7 +3,7 @@ title: "Ajudar na lua-de-mel do casal"
 gift: true
 suggest: true
 price: 445,00
-image: "004-viagem.jpg"
+image: "490-viagem.png"
 link: "https://mpago.la/2sFQKXK"
 weight: 1
 ---

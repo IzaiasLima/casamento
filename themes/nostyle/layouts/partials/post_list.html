@@ -1,8 +1,5 @@
-{{- $posts := "" -}}
-{{- $posts = site.RegularPages }}
-
 <section id="suggest">
-    <button class="close" onclick="window.open('/#suggest');" aria-label="Back" rel="prev">
+    <button class="close" onclick="window.open('/#suggest', '_self');" aria-label="Back" rel="prev">
         <span class="fa fa-arrow-left"></span>
     </button>
 
@@ -13,13 +10,20 @@
         </p>
     </div>
 
-    <div class="cards suggest">
+    {{ $tags := .Site.Taxonomies.tags }}
+    {{ range $name, $taxonomy := $tags }}
 
-        {{- if (gt (len $posts) 0) }}
-        {{- range $post := $posts -}}
+    <div class="tag">
+        <h2>{{ $name | humanize }}</h2>
+    </div>
+
+    <div class="cards suggest mini">
+
+        {{- if (gt (len $taxonomy.Pages) 0) }}
+        {{ range $taxonomy.Pages }}
 
         {{ if and .Params.gift (not .Params.suggest) }}
-        <div class="card suggest">
+        <div class="card suggest mini">
             <div class="image">
                 <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
             </div>
@@ -38,10 +42,15 @@
 
             {{ if .Params.link }}
             <a class="button mute" onclick="dialogShow('{{ .Title }}', '{{ .Params.link }}')">Presentear</a>
+            {{ else }}
+            <a class="button mute disabled">Esgotado</a>
             {{ end }}
+
         </div>
+        
         {{ end }}
         {{ end }}
         {{ end }}
     </div>
+    {{ end }}
 </section>

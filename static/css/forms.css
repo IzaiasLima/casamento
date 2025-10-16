@@ -1,3 +1,9 @@
+:root {
+    --bg-input: hsl(from var(--bg-color) h s calc(l + 1.5));
+    --btn-mute: hsl(from var(--mute-color) h s calc(l + 20));
+    --btn-disabled: hsl(from var(--mute-color) h s calc(l - 20));
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -32,6 +38,11 @@ form {
 
         & .mute {
             background-color: var(--mute-color);
+        }
+
+        &.disabled {
+            background-color: var(--btn-disabled);
+            cursor: not-allowed;
         }
     }
 
@@ -69,5 +80,10 @@ a.button {
 
     &.mute {
         background: var(--btn-mute);
+    }
+
+    &.disabled {
+        background-color: var(--btn-disabled);
+        cursor: not-allowed;
     }
 }
