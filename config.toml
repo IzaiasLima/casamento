@@ -46,7 +46,7 @@ series = "series"
     "css/history"]
 
   custom_js = [
-    "/js/custom",
+    "/js/main",
     "/js/menu",
     "/js/email"]
 
