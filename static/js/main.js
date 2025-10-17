@@ -9,9 +9,25 @@ function showHideTopBtn(scrPos) {
     }
 }
 
+function btnPulseActivate(height) {
+    const moreBtn = document.getElementById('more');
+    const btnPos = moreBtn.getBoundingClientRect().top;
+    const risePos = height - btnPos;
+    const isRising = risePos < 800 && risePos > 200;
+
+    if (isRising) {
+        moreBtn.classList.add('pulse');
+    } else {
+        moreBtn.classList.remove('pulse');
+    }
+}
+
 window.addEventListener('scroll', () => {
-    const scrPos = window.scrollY - window.innerHeight;
+    const height = window.innerHeight;
+    const scrPos = window.scrollY - height;
+
     showHideTopBtn(scrPos)
+    btnPulseActivate(height);
 })
 
 
