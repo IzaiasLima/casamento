@@ -25,7 +25,7 @@ enableInlineShortcodes = true
     weight = 4
 
 [[menu.main]]
-    name = "Asista On-line"
+    name = "Assista On-line"
     url = "#video"
     weight = 5
 

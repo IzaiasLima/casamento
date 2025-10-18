@@ -1,8 +1,8 @@
 ---
-title: "Cesto para roupas"
+title: "Cesto para roupas sujas"
 gift: true
 price: 95,00
-image: "000-sacola.png"
+image: "446-cesto-roupa-suja.png"
 tags: ["banheiro", "serviço"]
 ---
 

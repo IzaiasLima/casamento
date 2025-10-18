@@ -2,7 +2,7 @@
 title: "Jogo de canecas"
 gift: true
 price: 698,00
-image: "000-sacola.png"
+image: "436-caneca.png"
 tags: ["cozinha"]
 ---
 

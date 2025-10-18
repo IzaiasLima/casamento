@@ -2,7 +2,7 @@
 title: "Tapete de banheiro"
 gift: true
 price: 95,00
-image: "000-sacola.png"
+image: "421-tapete-de-banheiro.png"
 tags: ["banheiro"]
 ---
 

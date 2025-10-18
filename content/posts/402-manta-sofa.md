@@ -1,8 +1,8 @@
 ---
-title: "Mantas para sofá"
+title: "Manta para sofá"
 gift: true
 price: 65,00
-image: "000-sacola.png"
+image: "402-manta-sofa.png"
 tags: ["sala"]
 ---
 

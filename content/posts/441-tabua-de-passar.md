@@ -2,7 +2,7 @@
 title: "Tábua de passa roupas"
 gift: true
 price: 698,00
-image: "000-sacola.png"
+image: "441-tabua-de-passar.png"
 tags: ["serviço"]
 ---
 

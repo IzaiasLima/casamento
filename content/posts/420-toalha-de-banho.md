@@ -1,8 +1,9 @@
 ---
 title: "Jogo de toalhas de banho"
 gift: true
+suggest: true
 price: 95,00
-image: "000-sacola.png"
+image: "420-toalha-de-banho.png"
 tags: ["banheiro"]
 ---
 

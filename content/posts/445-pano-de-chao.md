@@ -2,7 +2,7 @@
 title: "Pano de chão"
 gift: true
 price: 698,00
-image: "000-sacola.png"
+image: "445-pano-de-chao.png"
 tags: ["serviço"]
 ---
 

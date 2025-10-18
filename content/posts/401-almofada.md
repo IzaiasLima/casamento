@@ -2,7 +2,7 @@
 title: "Almofadas para sofá"
 gift: true
 price: 65,00
-image: "000-sacola.png"
+image: "401-almofada.png"
 tags: ["sala"]
 ---
 

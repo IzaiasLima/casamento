@@ -2,7 +2,7 @@
 title: "Balde de plástico"
 gift: true
 price: 698,00
-image: "000-sacola.png"
+image: "444-balde.png"
 tags: ["serviço"]
 ---
 

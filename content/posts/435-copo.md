@@ -2,7 +2,7 @@
 title: "Jogo de copos"
 gift: true
 price: 698,00
-image: "000-sacola.png"
+image: "435-copo.png"
 tags: ["cozinha"]
 ---
 

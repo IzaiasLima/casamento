@@ -2,7 +2,7 @@
 title: "Jogo de xícaras"
 gift: true
 price: 698,00
-image: "000-sacola.png"
+image: "436-xicara.png"
 tags: ["cozinha"]
 ---
 

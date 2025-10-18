@@ -1,8 +1,9 @@
 ---
 title: "Tepetes"
 gift: true
+suggest: false
 price: 65,00
-image: "000-sacola.png"
+image: "412-tapete.png"
 tags: ["quarto","sala"]
 ---
 

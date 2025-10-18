@@ -2,7 +2,7 @@
 title: "Prendedores de roupas"
 gift: true
 price: 698,00
-image: "000-sacola.png"
+image: "443-prendedor.png"
 tags: ["serviço"]
 ---
 

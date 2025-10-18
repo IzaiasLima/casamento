@@ -2,7 +2,7 @@
 title: "Pano-de-prato"
 gift: true
 price: 95,00
-image: "000-sacola.png"
+image: "446-pano-de-prato.png"
 tags: ["cozinha", "serviço"]
 ---
 

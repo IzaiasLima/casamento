@@ -2,7 +2,7 @@
 title: "Panela elétrica de arroz"
 gift: true
 price: 698,00
-image: "000-sacola.png"
+image: "430-panela-eletrica.png"
 tags: ["cozinha"]
 ---
 

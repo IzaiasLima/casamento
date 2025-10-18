@@ -1,8 +1,9 @@
 ---
 title: "Conjunto de talheres"
 gift: true
+suggest: true
 price: 698,00
-image: "000-sacola.png"
+image: "433-talher.png"
 tags: ["cozinha"]
 ---
 

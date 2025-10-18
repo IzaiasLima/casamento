@@ -2,7 +2,7 @@
 title: "Luva térmica"
 gift: true
 price: 698,00
-image: "000-sacola.png"
+image: "439-luva-termica.png"
 tags: ["cozinha"]
 ---
 

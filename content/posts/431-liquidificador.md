@@ -2,7 +2,7 @@
 title: "Liquidificador"
 gift: true
 price: 698,00
-image: "000-sacola.png"
+image: "431-liquidificador.png"
 tags: ["cozinha"]
 ---
 
