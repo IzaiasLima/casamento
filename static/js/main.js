@@ -43,7 +43,6 @@ function dialogShow(item_name, mp_link) {
     mpLink.value = mp_link;
     dialog.classList.add('active');
     document.body.style.overflow = 'hidden';
-    // dialog.show();
 }
 
 function dialogClose() {
@@ -51,5 +50,4 @@ function dialogClose() {
     dialog.classList.remove('active');
     document.body.style.overflowX = 'clip';
     document.body.style.overflowY = 'visible';
-    // dialog.close();
 }

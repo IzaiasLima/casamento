@@ -30,19 +30,9 @@ nav {
             text-wrap-mode: nowrap;
         }
     }
-}
 
-@media (width <=768px) {
-    nav .logo {
-        margin-top: 40px;
-
-        & img {
-            width: 70%;
-        }
-
-        & h3 {
-            display: none;
-        }
+    & .logo-sm {
+        display: none;
     }
 }
 
@@ -53,6 +43,23 @@ nav {
         height: 10vh;
         justify-content: space-between;
         align-items: start;
+
+        & .logo {
+            margin-top: 40px;
+
+            & img {
+                width: 70%;
+            }
+
+            & h3 {
+                display: none;
+            }
+        }
+
+        & .logo-sm {
+            display: block;
+            width: 30px;
+        }
     }
 }
 
@@ -163,6 +170,7 @@ nav {
 @media (width <=768px) {
     .bars {
         display: flex;
+        padding-top: 5px;
     }
 }
 
