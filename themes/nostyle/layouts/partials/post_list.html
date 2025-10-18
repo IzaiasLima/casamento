@@ -22,7 +22,8 @@
         {{- if (gt (len $taxonomy.Pages) 0) }}
         {{ range $taxonomy.Pages }}
 
-        {{ if and .Params.gift (not .Params.suggest) }}
+        <!-- { if and .Params.gift (not .Params.suggest) } -->
+        {{ if .Params.gift }}
         <div class="card suggest mini">
             <div class="image">
                 <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
@@ -47,7 +48,7 @@
             {{ end }}
 
         </div>
-        
+
         {{ end }}
         {{ end }}
         {{ end }}

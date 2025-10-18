@@ -3,8 +3,9 @@ title: "Ajudar na lua-de-mel do casal"
 gift: true
 suggest: true
 price: 445,00
-image: "490-viagem.png"
+image: "400-viagem.png"
 link: "https://mpago.la/2sFQKXK"
+tags: ["Ajudar os Noivos"]
 weight: 1
 ---
 
