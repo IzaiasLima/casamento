@@ -80,7 +80,12 @@ article {
     .gift {
         padding: 0 3vw;
         padding-top: 1em;
+
+        & textarea {
+            margin-bottom: 10px;
+        }
     }
+    
 
     & .message h2 {
         padding-top: 20px;

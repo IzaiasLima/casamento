@@ -1,9 +1,10 @@
 ---
-title: "Cesto para para roupa limpa"
+title: "Cesto para roupa limpa"
 gift: true
-price: 95,00
+price: 99,90
 image: "446-cesto-roupa-limpa.png"
+link: https://mpago.la/2HHUDP2
 tags: ["serviço"]
 ---
 
-Cesto para papeis e lixo seco.
+Cesto para colocar roupa lavada.

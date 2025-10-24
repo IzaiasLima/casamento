@@ -1,12 +1,12 @@
 ---
-title: "Ajudar a comprar o fogão"
+title: "Fogão a gás"
 gift: true
 suggest: true
-price: 445,00
+price: 350,00
 image: "400-fogao.png"
-link: "https://mpago.la/2sFQKXK"
+link: https://mpago.la/1DFsvxk
 tags: ["cozinha"]
 weight: 6
 ---
 
-Ajudar o casal a comprar um fogão a gás.
+Fogão a gás para equipar a cozinha dos noivos.

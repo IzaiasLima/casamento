@@ -2,10 +2,10 @@
 title: "Ajudar a comprar a geladeira"
 gift: true
 suggest: true
-price: 445,00
+price: 450,00
 image: "400-geladeira.png"
-link: "https://mpago.la/2sFQKXK"
-tags: ["Ajudar os Noivos", "cozinha"]
+link: https://mpago.la/238N8EG
+tags: ["Ajudar os Noivos"]
 weight: 3
 ---
 

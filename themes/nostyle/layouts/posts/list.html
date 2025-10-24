@@ -10,10 +10,11 @@
 
     <a id="top-btn" class="hide" href="#home"><span class="fa fa-circle-up"></span></a>
 
-   {{ range .Site.Params.custom_js -}}
-   <script type="text/javascript" src="{{ . | absURL }}.js"></script>
-   {{- end }}
+    {{ range .Site.Params.custom_js -}}
+    <script type="text/javascript" src="{{ . | absURL }}.js"></script>
+    {{- end }}
 
+    {{- partial "dialog.html" . -}}
 
 </body>
 

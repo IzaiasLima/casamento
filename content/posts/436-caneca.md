@@ -1,8 +1,9 @@
 ---
 title: "Jogo de canecas"
 gift: true
-price: 698,00
+price: 99,90
 image: "436-caneca.png"
+link: https://mpago.la/2HHUDP2
 tags: ["cozinha"]
 ---
 

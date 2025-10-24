@@ -1,8 +1,9 @@
 ---
 title: "Pano-de-prato"
 gift: true
-price: 95,00
+price: 29,90
 image: "446-pano-de-prato.png"
+link: https://mpago.la/1cbDrsW
 tags: ["cozinha", "serviço"]
 ---
 

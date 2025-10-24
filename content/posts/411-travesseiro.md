@@ -1,8 +1,9 @@
 ---
 title: "Travesseiros"
 gift: true
-price: 59,95
+price: 149,90
 image: "411-travesseiro.png"
+link: https://mpago.la/2onQRtG
 tags: ["quarto"]
 ---
 

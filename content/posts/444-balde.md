@@ -1,8 +1,9 @@
 ---
 title: "Balde de plástico"
 gift: true
-price: 698,00
+price: 29,90
 image: "444-balde.png"
+link: https://mpago.la/1cbDrsW
 tags: ["serviço"]
 ---
 

@@ -2,10 +2,10 @@
 title: "Jogo de cama"
 gift: true
 suggest: true
-price: 129,00
+price: 219,90
 image: "410-jogo-de-cama.png"
+link: https://mpago.la/19bsPKC
 tags: ["quarto"]
-link: www.izaias.com.br
 ---
 
 Ajudar a montar o quarto do casal com roupas de cama e lençóis.

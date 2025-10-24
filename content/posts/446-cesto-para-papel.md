@@ -1,8 +1,9 @@
 ---
 title: "Cesto para para papéis"
 gift: true
-price: 95,00
+price: 49,90
 image: "446-cesto-para-papel.png"
+link: https://mpago.la/2XzTdA1
 tags: ["serviço"]
 ---
 

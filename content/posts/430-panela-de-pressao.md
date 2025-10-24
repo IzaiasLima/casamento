@@ -1,9 +1,10 @@
 ---
 title: "Panela de pressão"
 gift: true
-suggest: tru
-price: 698,00
+suggest: false
+price: 219,90
 image: "430-panela-de-pressao.png"
+link: https://mpago.la/19bsPKC
 tags: ["cozinha"]
 ---
 
