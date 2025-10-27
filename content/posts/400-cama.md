@@ -1,5 +1,5 @@
 ---
-title: "Ajudar a comprar a cama"
+title: "Cama Box Confortável"
 gift: true
 suggest: true
 price: 400,00
@@ -9,4 +9,5 @@ tags: ["Ajudar os Noivos", "quarto"]
 weight: 2
 ---
 
-Ajudar os noivos a comprar uma cama para o seu quarto de casal.
+O item essencial para garantir noites de sono perfeitas em nosso
+novo lar. Um conforto extra para os momentos de descanso a dois.

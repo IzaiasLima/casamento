@@ -7,4 +7,4 @@ link: https://mpago.la/2onQRtG
 tags: ["quarto"]
 ---
 
-Travesseiros para o quarto do casal.
+Essenciais para um sono reparador. Ajude a garantir o conforto e a saúde do nosso descanso.

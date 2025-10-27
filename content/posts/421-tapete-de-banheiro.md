@@ -1,5 +1,5 @@
 ---
-title: "Tapete de banheiro"
+title: "Tapete antiderrapante para banheiro"
 gift: true
 price: 49,90
 image: "421-tapete-de-banheiro.png"
@@ -8,4 +8,4 @@ tags: ["banheiro"]
 weight: 4
 ---
 
-Tapete para o box do banheiro.
+Conforto e segurança ao sair do banho, além de ajudar a decorar o ambiente.

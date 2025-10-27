@@ -7,4 +7,5 @@ link: https://mpago.la/2onQRtG
 tags: ["cozinha"]
 ---
 
-Liquidificador
+Para vitaminas, sucos e massas leves. Um item básico e
+fundamental para o nosso café da manhã e lanches.

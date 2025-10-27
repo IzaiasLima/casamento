@@ -1,5 +1,5 @@
 ---
-title: "Ajudar na lua-de-mel do casal"
+title: "Lua de mel dos Sonhos"
 gift: true
 suggest: true
 price: 300,00
@@ -9,4 +9,5 @@ tags: ["Ajudar os Noivos"]
 weight: 1
 ---
 
-Ajudar o casal a realizar o sonho de viajar na sua lua-de-mel.
+Uma contribuição para a viagem que selará nossa união! Ajude a
+pagar passagens, hospedagem ou um jantar especial inesquecível.

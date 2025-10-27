@@ -1,5 +1,5 @@
 ---
-title: "Ajudar a comprar a geladeira"
+title: "Geladeira Frost Free"
 gift: true
 suggest: true
 price: 450,00
@@ -9,4 +9,4 @@ tags: ["Ajudar os Noivos"]
 weight: 3
 ---
 
-Ajudar o casal a comprar uma geladeira para sua nova casa.
+Fundamental para a organização da cozinha e para manter nossos alimentos frescos e bebidas geladas.

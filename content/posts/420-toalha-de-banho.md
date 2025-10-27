@@ -1,5 +1,5 @@
 ---
-title: "Jogo de toalhas de banho"
+title: "Toalhas de banho"
 gift: true
 suggest: true
 price: 199,90
@@ -9,4 +9,4 @@ tags: ["banheiro"]
 weight: 1
 ---
 
-Jogo de toalhas de banho para o banheiro do casal.
+Toalhas grandes e felpudas para o conforto após o banho.

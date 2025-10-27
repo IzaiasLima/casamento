@@ -8,4 +8,4 @@ link: https://mpago.la/19bsPKC
 tags: ["cozinha"]
 ---
 
-Panela de pressão
+Item clássico e indispensável na cozinha, facilita o reparo de feijão e outras receitas demoradas.

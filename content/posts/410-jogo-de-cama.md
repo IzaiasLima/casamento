@@ -1,5 +1,5 @@
 ---
-title: "Jogo de cama"
+title: "Jogo de Cama de Casal"
 gift: true
 suggest: true
 price: 219,90
@@ -8,4 +8,4 @@ link: https://mpago.la/19bsPKC
 tags: ["quarto"]
 ---
 
-Ajudar a montar o quarto do casal com roupas de cama e lençóis.
+Lençóis macios para deixar nossa cama mais aconchegante.

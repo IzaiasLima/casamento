@@ -1,5 +1,5 @@
 ---
-title: "Ajudar com a mobília da casa"
+title: "Ajudar com a Mobília da casa"
 gift: true
 suggest: true
 price: 250,00
@@ -9,4 +9,5 @@ tags: ["Ajudar os Noivos", "sala"]
 weight: 4
 ---
 
-Ajudar a mobilar a casa do casal com móveis e elementos de decoração.
+Ajuda para comprar o sofá, rack ou poltronas. Onde vamos
+relaxar e receber amigos e familiares com muito conforto.

@@ -7,4 +7,5 @@ link: https://mpago.la/2onQRtG
 tags: ["cozinha"]
 ---
 
-Batedeira
+Para preparar bolos e massas deliciosas para receber nossos
+convidados. Essencial para quem ama confeitaria.

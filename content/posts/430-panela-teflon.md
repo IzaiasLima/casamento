@@ -1,5 +1,5 @@
 ---
-title: "Conjunto de panelas"
+title: "Conjunto de panelas antiaderentes"
 gift: true
 suggest: false
 price: 219,90
@@ -8,4 +8,4 @@ link: https://mpago.la/19bsPKC
 tags: ["cozinha"]
 ---
 
-Conjunto de panelas não aderentes
+Para evitar que os alimentos grudem, e facilita a limpeza. Um conjunto de panelas que não pode faltar!
