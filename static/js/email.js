@@ -10,7 +10,7 @@ window.onload = function () {
     if (isNotNull(frmEmail)) {
         frmEmail.addEventListener('submit', function (event) {
             event.preventDefault();
-            
+
 
             const mpLink = document.getElementById('mp_link').value;
 
@@ -23,7 +23,7 @@ window.onload = function () {
 
                     // chamada do Mercado Pago
                     if (isNotNull(mpLink)) {
-                        window.open(mpLink, '_blank', 'nofollow, noopener, noreferrer');
+                        window.open(mpLink, '_self');
                     }
                 },
 
