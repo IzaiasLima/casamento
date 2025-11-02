@@ -4,7 +4,7 @@ gift: true
 suggest: true
 price: 250,00
 image: "400-mobilia.png"
-link: https://mpago.la/2cpudfQ
+link: "https://mpago.la/2cpudfQ"
 tags: ["Ajudar os Noivos", "sala"]
 weight: 4
 ---

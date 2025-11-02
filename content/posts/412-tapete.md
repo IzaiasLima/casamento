@@ -5,7 +5,7 @@ suggest: false
 price: 149,90
 image: "412-tapete.png"
 tags: ["sala"]
-link: https://mpago.la/2onQRtG
+link: "https://mpago.la/2onQRtG"
 weight: 3
 ---
 

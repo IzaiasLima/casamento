@@ -4,7 +4,7 @@ gift: true
 suggest: true
 price: 350,00
 image: "400-fogao.png"
-link: https://mpago.la/1DFsvxk
+link: "https://mpago.la/1DFsvxk"
 tags: ["Ajudar os Noivos", "cozinha"]
 weight: 6
 ---

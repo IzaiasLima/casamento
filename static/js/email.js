@@ -23,7 +23,7 @@ window.onload = function () {
 
                     // chamada do Mercado Pago
                     if (isNotNull(mpLink)) {
-                        window.open(mpLink, '_self');
+                        window.location.href = mpLink;
                     }
                 },
 

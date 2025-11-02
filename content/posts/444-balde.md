@@ -3,7 +3,7 @@ title: "Balde"
 gift: true
 price: 29,90
 image: "444-balde.png"
-link: https://mpago.la/1cbDrsW
+link: "https://mpago.la/1cbDrsW"
 tags: ["serviço"]
 ---
 
