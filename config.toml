@@ -46,9 +46,10 @@ series = "series"
     "css/history"]
 
   custom_js = [
+    "/js/doar",
     "/js/main",
     "/js/menu",
-    "/js/email"]
+    ]
 
   show_description = true
   slogan = "Um espaço de Criação e Inspiração"

@@ -82,10 +82,10 @@ article {
         padding-top: 1em;
 
         & textarea {
-            margin-bottom: 10px;
+            margin-bottom: 16px;
         }
     }
-    
+
 
     & .message h2 {
         padding-top: 20px;

@@ -6,7 +6,6 @@ const history = document.querySelector('.history-text');
 function closeMenu() {
     btn.classList.remove('active');
     links.classList.remove('active');
-    console.log('Clicou');
 }
 
 function openMenu() {
@@ -14,9 +13,9 @@ function openMenu() {
     links.classList.toggle('active');
 }
 
-btn.addEventListener('click', () => openMenu());
-cover.addEventListener('click', () => closeMenu());
-history.addEventListener('click', () => closeMenu());
+btn?.addEventListener('click', () => openMenu());
+cover?.addEventListener('click', () => closeMenu());
+history?.addEventListener('click', () => closeMenu());
 
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => closeMenu());

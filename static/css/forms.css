@@ -4,6 +4,33 @@
     --btn-disabled: hsl(from var(--mute-color) h s calc(l - 20));
 }
 
+a.button {
+    display: flex;
+    position: relative;
+    padding: 0.6em 3em;
+    justify-self: center;
+    text-align: center;
+    border: none;
+    color: var(--text-inverse-color);
+    font-weight: 600;
+    background: linear-gradient(313deg, var(--mute-color) 6.82%, var(--accent-color) 87.42%);
+    border-radius: 7px;
+    cursor: pointer;
+
+    &.mute {
+        background: var(--btn-mute);
+    }
+
+    &.disabled {
+        background-color: var(--btn-disabled);
+        cursor: not-allowed;
+    }
+
+    &.pulse {
+        animation: pulse 1.3s 2 alternate ease-in-out;
+    }
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -26,7 +53,7 @@ form {
         background-color: var(--bg-input);
     }
 
-    input[type=submit] {
+    & a.button {
         min-width: 200px;
         align-self: center;
         border: none;
@@ -66,40 +93,16 @@ form {
     }
 }
 
-a.button {
-    display: flex;
-    position: relative;
-    padding: 0.6em 3em;
-    justify-self: center;
-    text-align: center;
-    border: none;
-    color: var(--text-inverse-color);
-    font-weight: 600;
-    background: linear-gradient(313deg, var(--mute-color) 6.82%, var(--accent-color) 87.42%);
-    border-radius: 7px;
-    cursor: pointer;
-
-    &.mute {
-        background: var(--btn-mute);
-    }
-
-    &.disabled {
-        background-color: var(--btn-disabled);
-        cursor: not-allowed;
-    }
-
-    &.pulse {
-        animation: pulse 1.3s 2 alternate ease-in-out;
-    }
-}
 
 @keyframes pulse {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }
