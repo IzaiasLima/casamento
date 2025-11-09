@@ -9,8 +9,9 @@ function efetuarPagamento(event) {
 
     // window.onload = function () {
     const frmEmail = document.getElementById('contact-form')
+    const name = document.getElementById('name').value;
 
-    if (isNotNull(frmEmail)) {
+    if (isNotNull(frmEmail) && isNotBlank(name)) {
         // frmEmail.addEventListener('submit', function (event) {
         //     event.preventDefault();
 
@@ -36,11 +37,17 @@ function efetuarPagamento(event) {
             },
         );
         // });
+    } else {
+        showToast('Por favor, informe pelo menos o seu nome.', true);
     }
 }
 
 function isNotNull(obj) {
     return obj && obj !== 'null' && obj !== 'undefined';
+}
+
+function isNotBlank(str) {
+    return (str != null && str.trim().length > 0);
 }
 
 function showToast(msg, err = false) {
