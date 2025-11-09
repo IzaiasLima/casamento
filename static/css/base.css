@@ -379,6 +379,7 @@ a {
     position: fixed;
     justify-content: center;
     align-items: center;
+    font-size: 1.3rem;
 
     top: calc(50vh - 100px);
 
@@ -402,7 +403,7 @@ a {
 }
 
 #toast.err {
-    background-color: #ee535d;
+    background-color: #e63e14;
 }
 
 @media (width <=768) {
