@@ -49,6 +49,7 @@ series = "series"
     "/js/doar",
     "/js/main",
     "/js/menu",
+    "/js/contador",
     ]
 
   show_description = true

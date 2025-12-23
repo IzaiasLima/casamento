@@ -6,12 +6,16 @@
         <div class="image">
             <img src="/posts/images/{{ .Params.image }}" alt="{{ .Params.image }}">
         </div>
+
         <div class="cover">
             <div class="message">
                 <h1> {{ .Title }} </h1>
-                <h2> {{ .Params.message }}</h2>
+                <h2> {{ .Params.message }} </h2>
+                <h2 id="countdown" class="h1">Izaias</h2>
             </div>
         </div>
+
+
         {{ end }}
     </div>
 </section>
