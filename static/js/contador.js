@@ -9,7 +9,8 @@ function atualizarContador() {
 
 
     if (distancia < 0) {
-        elementoContador.innerHTML = '<div>O evento já ocorreu!</div>';
+        // elementoContador.innerHTML = '<div>O evento já ocorreu!</div>';
+        elementoContador.innerHTML = '';
         clearInterval(intervalo);
         return;
     }
