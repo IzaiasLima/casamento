@@ -18,14 +18,9 @@ enableInlineShortcodes = true
     name = "Castelo"
     url = "#info"
     weight = 2
-    
-[[menu.main]]
-    name = "Lista de Presentes"
-    url = "#suggest"
-    weight = 4
 
 [[menu.main]]
-    name = "Assista On-line"
+    name = "Vídeos do Evento"
     url = "#video"
     weight = 5
 
